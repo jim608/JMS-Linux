@@ -69,8 +69,8 @@
     },
     {
       "name": "JMS-0.11.1-jms.21-source.zip",
-      "size": 68252705,
-      "sha256": "2ecaf31ee7807523f9f64feab34173046d1b21919149deb47eb96698bc664126"
+      "size": 68222801,
+      "sha256": "9f82f6274dab3e33a6e4292b23b99b5dbe025a5bee4b718ae8dafe4114995484"
     },
     {
       "name": "JMS-Linux-0.11.1-jms.21-native-materials.zip",
@@ -80,7 +80,7 @@
     {
       "name": "update-linux.json",
       "size": 778,
-      "sha256": "01b389fbc16e83663aaa371775e17696f15b03a1ef40f76d5b448a71d392ce68"
+      "sha256": "5f363a01f8745829f3079b0a48bb776a67f23e387e686665e008c97adf965f76"
     },
     {
       "name": "native-review.json",
@@ -95,7 +95,7 @@
     {
       "name": "SHA256SUMS.txt",
       "size": 674,
-      "sha256": "52d7b49a7941eb25ecc5cf8b3b9fb43684ba2e958cf4527b39c52e0674ca0a28"
+      "sha256": "f6f45bf0a6be740c3398648544756e147bf1147878177519eca7a1e8bd51ce81"
     }
   ]
 }
