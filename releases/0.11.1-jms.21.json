@@ -1,0 +1,101 @@
+{
+  "platform": "linux-x64",
+  "versionName": "0.11.1-jms.21",
+  "versionCode": 23,
+  "sourceCommit": "9f0b5d8d47c446a1a2caa4f9f1d9d1bfbcbc5a81",
+  "buildId": "JMS-0.11.1-jms.21-linux-9f0b5d8d47c4",
+  "repository": "jim608/JMS-Linux",
+  "sourceRepository": "jim608/JMS-Android",
+  "nativeReview": {
+    "platform": "linux-x64",
+    "missing": [],
+    "materials": [
+      "JMS-Linux-0.11.1-jms.21-native-materials.zip"
+    ],
+    "binaries": {
+      "lib/libapp.so": "bcac9a01bb655475f1e67ee700298ba61f89dd86ef27cff9a2d7cc1ea6f4bea9",
+      "lib/libdesktop_drop_plugin.so": "c7bdf733c89f92cd243b63715f5e83feeba131cdd4a3c5b93686601d50b902e6",
+      "lib/libdesktop_multi_window_plugin.so": "c91878a6d642da5ddb01c4e4d272e470dd4b77356de3ffb7ee32c91b0030205f",
+      "lib/libdynamic_color_plugin.so": "bd7c2c32375dc1df7972c392b5e79386001ea14247a49cfcc4901c97572612c7",
+      "lib/libflutter_linux_gtk.so": "23e7390f30a9b2bc0bef86c026884c505c5a66876f190631f04fdcaecec3f3c8",
+      "lib/libmedia_kit_libs_linux_plugin.so": "1f6331446afc890816cbd7c81f68e6330eba718085a2be489615e74a80de6db9",
+      "lib/libmedia_kit_video_plugin.so": "c5684d26d85b32ff3b147c4787a0f0b9eb80c7fe841b527fa4e5172ec9558fff",
+      "lib/libscreen_retriever_linux_plugin.so": "74acca4d09a8f54c8dadf86d42ee9f36f06abb463bfbdc1b07515c4291455917",
+      "lib/libsqlite3_flutter_libs_plugin.so": "b8dacbe3b460f6ce5d6ee83bd61fd6b46d73080b9d32b5708cb8067cc14adf18",
+      "lib/liburl_launcher_linux_plugin.so": "d7ccd8c2385b4242a7a285ebc94c73b1d47d3cbddd6421a794ae7510842079bd",
+      "lib/libvolume_controller_plugin.so": "b0a2c129ec242831f4147c23db516a927cee820a89945c4190d31e3f9780de07",
+      "lib/libwindow_manager_plugin.so": "aff60dbe8b33ad4cc59f8783b510e578ade199ffbcd75228562658025d55f58e"
+    },
+    "systemDependencies": [
+      "mpv",
+      "gtk3",
+      "alsa-lib",
+      "sqlite",
+      "libsecret",
+      "gnome-keyring",
+      "polkit",
+      "networkmanager"
+    ],
+    "pluginSources": "Actual build cache, pinned by shared pubspec.lock",
+    "flutterEngine": "035316565ad77281a75305515e4682e6c4c6f7ca"
+  },
+  "validation": {
+    "launch": true,
+    "environment": "Isolated Arch Linux x86_64 with Xvfb, PulseAudio, D-Bus and NetworkManager",
+    "upgrade": "0.11.1_jms.19-21 to 0.11.1_jms.21-23 via pacman",
+    "settingsRetained": [
+      "themeMode",
+      "checkForUpdates"
+    ],
+    "secretService": [
+      "separate-process restore",
+      "daemon restart",
+      "logout clear",
+      "account isolation",
+      "unavailable service"
+    ],
+    "physicalDesktop": false
+  },
+  "assets": [
+    {
+      "name": "JMS-Linux-0.11.1-jms.21-x86_64.pkg.tar.xz",
+      "size": 31204428,
+      "sha256": "fa373413b2a0e1d69fb284be07085ca94addfcacb87cff52f7968d29828cf28b"
+    },
+    {
+      "name": "JMS-Linux-0.11.1-jms.21-x64.tar.gz",
+      "size": 42280566,
+      "sha256": "5b0d16176eb00209dfa29a60fc98f35bb7802570b7f0647f1530c644423475e7"
+    },
+    {
+      "name": "JMS-0.11.1-jms.21-source.zip",
+      "size": 68252705,
+      "sha256": "2ecaf31ee7807523f9f64feab34173046d1b21919149deb47eb96698bc664126"
+    },
+    {
+      "name": "JMS-Linux-0.11.1-jms.21-native-materials.zip",
+      "size": 2297034,
+      "sha256": "97483fc17b8a8c09b6f1f37faea46a2542fbe8f52eec05dc9fbd7ad21da9178f"
+    },
+    {
+      "name": "update-linux.json",
+      "size": 778,
+      "sha256": "01b389fbc16e83663aaa371775e17696f15b03a1ef40f76d5b448a71d392ce68"
+    },
+    {
+      "name": "native-review.json",
+      "size": 1758,
+      "sha256": "780486bc75a61264b148e978da804464be3cde43626d17603bd3c087c006df79"
+    },
+    {
+      "name": "RELEASE_NOTES.md",
+      "size": 1675,
+      "sha256": "a6fbbb3a7937792a0024d1d0e22de1e174efbf80794f9602029329f948b20cad"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "size": 674,
+      "sha256": "52d7b49a7941eb25ecc5cf8b3b9fb43684ba2e958cf4527b39c52e0674ca0a28"
+    }
+  ]
+}
