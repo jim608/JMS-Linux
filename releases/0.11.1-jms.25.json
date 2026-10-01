@@ -1,0 +1,117 @@
+{
+  "platform": "linux-x64",
+  "versionName": "0.11.1-jms.25",
+  "versionCode": 27,
+  "sourceCommit": "fc0e901a2d3a0e0cd7f133882dbe496898ee1eb0",
+  "buildId": "JMS-0.11.1-jms.25-linux-fc0e901a2d3a",
+  "repository": "jim608/JMS-Linux",
+  "sourceRepository": "jim608/JMS-Android",
+  "nativeReview": {
+    "platform": "linux-x64",
+    "missing": [],
+    "materials": [
+      "JMS-Linux-0.11.1-jms.25-native-materials.zip"
+    ],
+    "binaries": {
+      "lib/libapp.so": "81a0b5522f71835596dcab6df481e0e16a7961249073d15ddd968a00c159da55",
+      "lib/libdesktop_drop_plugin.so": "c7bdf733c89f92cd243b63715f5e83feeba131cdd4a3c5b93686601d50b902e6",
+      "lib/libdesktop_multi_window_plugin.so": "c91878a6d642da5ddb01c4e4d272e470dd4b77356de3ffb7ee32c91b0030205f",
+      "lib/libdynamic_color_plugin.so": "bd7c2c32375dc1df7972c392b5e79386001ea14247a49cfcc4901c97572612c7",
+      "lib/libflutter_linux_gtk.so": "23e7390f30a9b2bc0bef86c026884c505c5a66876f190631f04fdcaecec3f3c8",
+      "lib/libmedia_kit_libs_linux_plugin.so": "1f6331446afc890816cbd7c81f68e6330eba718085a2be489615e74a80de6db9",
+      "lib/libmedia_kit_video_plugin.so": "c5684d26d85b32ff3b147c4787a0f0b9eb80c7fe841b527fa4e5172ec9558fff",
+      "lib/libscreen_retriever_linux_plugin.so": "74acca4d09a8f54c8dadf86d42ee9f36f06abb463bfbdc1b07515c4291455917",
+      "lib/libsqlite3_flutter_libs_plugin.so": "b8dacbe3b460f6ce5d6ee83bd61fd6b46d73080b9d32b5708cb8067cc14adf18",
+      "lib/liburl_launcher_linux_plugin.so": "d7ccd8c2385b4242a7a285ebc94c73b1d47d3cbddd6421a794ae7510842079bd",
+      "lib/libvolume_controller_plugin.so": "b0a2c129ec242831f4147c23db516a927cee820a89945c4190d31e3f9780de07",
+      "lib/libwindow_manager_plugin.so": "aff60dbe8b33ad4cc59f8783b510e578ade199ffbcd75228562658025d55f58e"
+    },
+    "systemDependencies": [
+      "mpv",
+      "gtk3",
+      "alsa-lib",
+      "sqlite",
+      "libsecret",
+      "gnome-keyring",
+      "polkit",
+      "networkmanager"
+    ],
+    "pluginSources": "Hosted source files verified against previous materials and current cache; Git plugin files exported from exact pubspec.lock resolved revisions",
+    "flutterEngine": "035316565ad77281a75305515e4682e6c4c6f7ca",
+    "sourceCommit": "fc0e901a2d3a0e0cd7f133882dbe496898ee1eb0"
+  },
+  "validation": {
+    "launch": true,
+    "portableLaunch": true,
+    "upgrade": true,
+    "freshInstall": true,
+    "settingsRetained": [
+      "themeMode",
+      "checkForUpdates"
+    ],
+    "environment": "Isolated Arch x86_64, Xvfb, PulseAudio and system/session D-Bus",
+    "physicalDesktop": false,
+    "secretService": [
+      "cross-process restore",
+      "daemon restart",
+      "logout clear",
+      "account isolation",
+      "no plaintext fallback"
+    ],
+    "diagnosticsContainer": [
+      "root nginx",
+      "rootless nginx",
+      "production nginx",
+      "synthetic event acceptance",
+      "unknown field refusal",
+      "credentials not persisted"
+    ],
+    "buildWorkflow": "https://github.com/jim608/JMS-Android/actions/runs/36839758765",
+    "diagnosticsWorkflow": "https://github.com/jim608/JMS-Android/actions/runs/36839758765",
+    "installWorkflow": "https://github.com/jim608/JMS-Android/actions/runs/36841926893",
+    "validationToolsCommit": "47102242e70f137c260ec523f55d55500803976f"
+  },
+  "assets": [
+    {
+      "name": "JMS-Linux-0.11.1-jms.25-x86_64.pkg.tar.xz",
+      "size": 31192368,
+      "sha256": "20466ac0c93a7eb18741c5acc62008e7660cc24af8f015bf153fad7628b7fdf2"
+    },
+    {
+      "name": "JMS-Linux-0.11.1-jms.25-x64.tar.gz",
+      "size": 42287937,
+      "sha256": "4ba8d79ca8594d9f7fd205f01b41ac50b0c3f05315dfee03cfd201bbe068ab14"
+    },
+    {
+      "name": "JMS-0.11.1-jms.25-source.zip",
+      "size": 68579461,
+      "sha256": "998336ce815fe7170ea1c1cd1e936552b0a3def3e95a09ad34753412a6109d7e"
+    },
+    {
+      "name": "JMS-Linux-0.11.1-jms.25-native-materials.zip",
+      "size": 2283307,
+      "sha256": "5c8a96dd55ff80a78f9b3d2b142cfa887db116e643a8136e0ebb16dd077874d9"
+    },
+    {
+      "name": "native-review.json",
+      "size": 1881,
+      "sha256": "87d64fa9393539a2a1f6f60b508e5e3768b2692d62d6add9c360b858b76d6101"
+    },
+    {
+      "name": "update-linux.json",
+      "size": 754,
+      "sha256": "6e0e9c5b36c243dc85bdf5faeb002a6a60ac935ef5c8c7564b51b3d14eec6328"
+    },
+    {
+      "name": "RELEASE_NOTES.md",
+      "size": 1146,
+      "sha256": "28707f1bff4614de36689aaaca20b916e213e18f46fcfed3747b5bc6611633ab"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "size": 667,
+      "sha256": "b02b5996fdcd6896d7e653771862fd8b5fe925c5f71938fbc63456cd2f36a816"
+    }
+  ],
+  "releaseToolsCommit": "0ce5b1b04b8ee6b77af4f0be698087fa9dc7e9a0"
+}
