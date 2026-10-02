@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=JMS
+Comment=Jim608 Media Server
+Exec=/opt/jms/jms
+Icon=com.jim608.jms
+Terminal=false
+Categories=AudioVideo;Video;
+StartupWMClass=com.jim608.jms

@@ -4,6 +4,10 @@ JMS（Jim608 Media Server）基於 [DonutWare/Fladder](https://github.com/DonutW
 
 本倉庫專門提供 **EndeavourOS／Arch Linux x86_64** 發布與更新資訊，不宣稱支援所有 Linux 發行版。
 
+## Arch / EndeavourOS 套件安裝
+
+AUR `jms-bin` 配方、桌面整合、相依套件宣告與簽章軟體庫 staging 已放在本倉庫。請先閱讀 [Arch 安裝與發佈說明](docs/ARCH.md)。AUR 上架後使用 `yay -S jms-bin`；已加入可信任的軟體庫後使用 `sudo pacman -Syu jms`。套件名稱為小寫，目前加入配方不代表已公開上架或啟用軟體庫。
+
 ## 下載與更新
 
 請從 [Releases](https://github.com/jim608/JMS-Linux/releases) 下載 pacman 套件或可攜式套件，依 SHA256SUMS.txt 核對檔案。測試版不會推送給僅接收穩定版的使用者；自動檢查更新不等於自動安裝。

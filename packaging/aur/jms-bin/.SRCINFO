@@ -1,0 +1,29 @@
+pkgbase = jms-bin
+	pkgdesc = Jim608 Media Server desktop client (prebuilt release)
+	pkgver = 0.11.1_jms.25
+	pkgrel = 27
+	url = https://github.com/jim608/JMS-Linux
+	arch = x86_64
+	license = GPL-3.0-only
+	depends = glibc>=2.36
+	depends = gcc-libs
+	depends = gtk3
+	depends = mpv
+	depends = alsa-lib
+	depends = sqlite
+	depends = polkit
+	depends = libarchive
+	depends = xdg-user-dirs
+	depends = libsecret
+	depends = gnome-keyring
+	depends = networkmanager
+	provides = jms=0.11.1_jms.25
+	conflicts = jms
+	options = !strip
+	options = !debug
+	source = https://github.com/jim608/JMS-Linux/releases/download/v0.11.1-jms.25/JMS-Linux-0.11.1-jms.25-x64.tar.gz
+	source = com.jim608.jms.desktop
+	sha256sums = 4ba8d79ca8594d9f7fd205f01b41ac50b0c3f05315dfee03cfd201bbe068ab14
+	sha256sums = 2e2c64e596f6e287397343a29a6b935005d8c1332137d8802f927d5830d947ec
+
+pkgname = jms-bin

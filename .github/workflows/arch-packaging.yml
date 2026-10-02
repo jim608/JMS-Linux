@@ -1,0 +1,46 @@
+name: Arch packaging
+on:
+  push:
+    paths: ['packaging/**', 'scripts/**', 'tests/**', '.github/workflows/arch-packaging.yml']
+  pull_request:
+    paths: ['packaging/**', 'scripts/**', 'tests/**', '.github/workflows/arch-packaging.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    container: archlinux:base-devel
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepare isolated build account
+        run: |
+          pacman -Syu --noconfirm --needed python desktop-file-utils namcap
+          useradd -m builder
+          chown -R builder:builder "$GITHUB_WORKSPACE"
+      - name: Check metadata and contracts
+        run: |
+          su builder -c "cd '$GITHUB_WORKSPACE' && scripts/print-srcinfo.sh" > /tmp/SRCINFO
+          diff -u packaging/aur/jms-bin/.SRCINFO /tmp/SRCINFO
+          python -m unittest discover -s tests -v
+      - name: Build checked binary recipe
+        run: |
+          # Dependencies come only from Arch repositories, not sudo rights for makepkg.
+          bash -c 'source packaging/aur/jms-bin/PKGBUILD; pacman -S --needed --noconfirm "${depends[@]}"'
+          su builder -c "cd '$GITHUB_WORKSPACE/packaging/aur/jms-bin' && makepkg --cleanbuild --noconfirm"
+          namcap packaging/aur/jms-bin/*.pkg.tar.zst
+      - name: Install and inspect in disposable container
+        run: |
+          pacman -U --noconfirm packaging/aur/jms-bin/*.pkg.tar.zst
+          pacman -Q jms-bin
+          test -x /opt/jms/jms
+          test "$(readlink /usr/bin/jms)" = /opt/jms/jms
+          ldd /opt/jms/jms /opt/jms/lib/*.so | tee /tmp/ldd.txt
+          ! grep -F 'not found' /tmp/ldd.txt
+          pacman -R --noconfirm jms-bin
+          test ! -e /opt/jms/jms
+      - uses: actions/upload-artifact@v4
+        with:
+          name: jms-bin-arch-x86_64
+          path: packaging/aur/jms-bin/*.pkg.tar.zst
+          if-no-files-found: error

@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+/packaging/aur/jms-bin/src/
+/packaging/aur/jms-bin/pkg/
+/packaging/aur/jms-bin/*.tar.*
+/artifacts/
