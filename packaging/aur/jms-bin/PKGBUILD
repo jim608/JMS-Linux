@@ -1,0 +1,42 @@
+# Maintainer: JMS maintainers <https://github.com/jim608/JMS-Linux>
+# Prebuilt release; shared Flutter source lives in JMS-Android, not this repo.
+pkgname=jms-bin
+pkgver=0.11.1_jms.25
+pkgrel=27
+pkgdesc='Jim608 Media Server desktop client (prebuilt release)'
+arch=('x86_64')
+url='https://github.com/jim608/JMS-Linux'
+license=('GPL-3.0-only')
+depends=('glibc>=2.36' 'gcc-libs' 'gtk3' 'mpv' 'alsa-lib' 'sqlite'
+         'polkit' 'libarchive' 'xdg-user-dirs' 'libsecret' 'gnome-keyring'
+         'networkmanager')
+makedepends=('patchelf')
+provides=("jms=${pkgver}")
+conflicts=('jms')
+# Preserve assets and symbols; normalize only plugin runtime search paths.
+options=('!strip' '!debug')
+_upstream_version=${pkgver/_/-}
+source=("https://github.com/jim608/JMS-Linux/releases/download/v${_upstream_version}/JMS-Linux-${_upstream_version}-x64.tar.gz"
+        'com.jim608.jms.desktop')
+sha256sums=('4ba8d79ca8594d9f7fd205f01b41ac50b0c3f05315dfee03cfd201bbe068ab14'
+            '2e2c64e596f6e287397343a29a6b935005d8c1332137d8802f927d5830d947ec')
+
+package() {
+    install -d "$pkgdir/opt/jms" "$pkgdir/usr/bin"
+    cp -a "$srcdir/JMS/." "$pkgdir/opt/jms/"
+    # Upstream plugins retain an absolute build-machine RUNPATH. Resolve their
+    # bundled Flutter engine beside the plugin, never from a writable build path.
+    local plugin
+    for plugin in "$pkgdir"/opt/jms/lib/*_plugin.so; do
+        patchelf --set-rpath '$ORIGIN' "$plugin"
+    done
+    chmod 755 "$pkgdir/opt/jms/jms"
+    ln -s /opt/jms/jms "$pkgdir/usr/bin/jms"
+    install -Dm644 "$srcdir/com.jim608.jms.desktop" \
+        "$pkgdir/usr/share/applications/com.jim608.jms.desktop"
+    install -Dm644 "$srcdir/JMS/data/flutter_assets/icons/jms/icon.png" \
+        "$pkgdir/usr/share/icons/hicolor/512x512/apps/com.jim608.jms.png"
+    install -Dm644 "$srcdir/JMS/LICENSE" "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+    install -Dm644 "$srcdir/JMS/data/flutter_assets/assets/licenses/JMS_NATIVE_NOTICES.txt" \
+        "$pkgdir/usr/share/licenses/$pkgname/JMS_NATIVE_NOTICES.txt"
+}
