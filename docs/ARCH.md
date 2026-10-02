@@ -30,7 +30,7 @@ makepkg --printsrcinfo > .SRCINFO
 makepkg -si
 ```
 
-配方固定版本與 SHA256，從發布的 portable payload 重新封裝，不另存或建置 Flutter 原始碼。共用程式仍由 JMS-Android 的 jms 分支維護。AUR 的 `jms-bin` 以 `provides=('jms=...')`、`conflicts=('jms')` 宣告與官方二進位 `jms` 的相同檔案用途；兩者不能同時安裝。套件管理員會要求確認替換，請勿用 `--overwrite '*'`。切回官方 jms 前亦須透過套件管理員移除 jms-bin，保留使用者資料。程式內建更新安裝可能切回官方 jms，因此 AUR 使用者請透過 yay 更新。
+配方固定版本與 SHA256，從發布的 portable payload 重新封裝，不另存或建置 Flutter 原始碼。建置時使用 patchelf 將 plugin 的上游絕對 RUNPATH 修正為 `$ORIGIN`，避免從建置機路徑尋找 Flutter engine；其餘 payload 保持不變。共用程式仍由 JMS-Android 的 jms 分支維護。AUR 的 `jms-bin` 以 `provides=('jms=...')`、`conflicts=('jms')` 宣告與官方二進位 `jms` 的相同檔案用途；兩者不能同時安裝。套件管理員會要求確認替換，請勿用 `--overwrite '*'`。切回官方 jms 前亦須透過套件管理員移除 jms-bin，保留使用者資料。程式內建更新安裝可能切回官方 jms，因此 AUR 使用者請透過 yay 更新。
 
 首次上架需要：
 
@@ -71,8 +71,8 @@ Server = https://YOUR-VERIFIED-HOST/arch/$arch
 
 ## 驗證範圍
 
-`python -m unittest discover -s tests -v` 檢查 metadata、release hash、依賴與 desktop。設定 `JMS_PORTABLE_ARCHIVE=/absolute/path/archive.tar.gz` 可在臨時目錄執行真實 payload 封裝並逐檔比對，**不安裝到本機**。
+`python -m unittest discover -s tests -v` 檢查 metadata、release hash、依賴與 desktop。設定 `JMS_PORTABLE_ARCHIVE=/absolute/path/archive.tar.gz` 可在臨時目錄執行真實 payload 封裝並比對非 plugin 檔案與 plugin 的機器碼及 RUNPATH，**不安裝到本機**。
 
-`scripts/print-srcinfo.sh` 使用官方 makepkg 產生 metadata；CI 做逐位元比對、Arch 容器建置、實際 pacman 安裝 / 移除以及 ELF 動態庫缺失檢查。CI 不發布、不簽署、不推送 AUR。不應把 metadata / staging 通過說成 Arch 實機播放通過。升級舊 jms、AUR 與 repo 互換、Secret Service、Polkit、Wayland/X11、音訊與 GPU 播放仍需專門的桌面測試。
+`scripts/print-srcinfo.sh` 使用官方 makepkg 產生 metadata；CI 做逐位元比對、Arch 容器建置、實際 pacman 安裝 / 移除以及 ELF 動態庫缺失檢查。namcap 的 `/opt` 路徑提示是本預編譯 bundle 的明確例外，其餘 error 會使 CI 失敗；保留原始符號與 RELRO 警告待上游重建處理。CI 不發布、不簽署、不推送 AUR。不應把 metadata / staging 通過說成 Arch 實機播放通過。升級舊 jms、AUR 與 repo 互換、Secret Service、Polkit、Wayland/X11、音訊與 GPU 播放仍需專門的桌面測試。
 
 參考：[PKGBUILD](https://man.archlinux.org/man/PKGBUILD.5.en)、[repo-add](https://man.archlinux.org/man/repo-add.8.en)、[pacman.conf](https://man.archlinux.org/man/pacman.conf.5.en)。

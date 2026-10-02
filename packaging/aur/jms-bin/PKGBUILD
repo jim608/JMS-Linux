@@ -10,9 +10,10 @@ license=('GPL-3.0-only')
 depends=('glibc>=2.36' 'gcc-libs' 'gtk3' 'mpv' 'alsa-lib' 'sqlite'
          'polkit' 'libarchive' 'xdg-user-dirs' 'libsecret' 'gnome-keyring'
          'networkmanager')
+makedepends=('patchelf')
 provides=("jms=${pkgver}")
 conflicts=('jms')
-# Preserve reviewed upstream binaries and bundled Flutter assets.
+# Preserve assets and symbols; normalize only plugin runtime search paths.
 options=('!strip' '!debug')
 _upstream_version=${pkgver/_/-}
 source=("https://github.com/jim608/JMS-Linux/releases/download/v${_upstream_version}/JMS-Linux-${_upstream_version}-x64.tar.gz"
@@ -23,6 +24,12 @@ sha256sums=('4ba8d79ca8594d9f7fd205f01b41ac50b0c3f05315dfee03cfd201bbe068ab14'
 package() {
     install -d "$pkgdir/opt/jms" "$pkgdir/usr/bin"
     cp -a "$srcdir/JMS/." "$pkgdir/opt/jms/"
+    # Upstream plugins retain an absolute build-machine RUNPATH. Resolve their
+    # bundled Flutter engine beside the plugin, never from a writable build path.
+    local plugin
+    for plugin in "$pkgdir"/opt/jms/lib/*_plugin.so; do
+        patchelf --set-rpath '$ORIGIN' "$plugin"
+    done
     chmod 755 "$pkgdir/opt/jms/jms"
     ln -s /opt/jms/jms "$pkgdir/usr/bin/jms"
     install -Dm644 "$srcdir/com.jim608.jms.desktop" \

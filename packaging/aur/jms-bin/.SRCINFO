@@ -5,6 +5,7 @@ pkgbase = jms-bin
 	url = https://github.com/jim608/JMS-Linux
 	arch = x86_64
 	license = GPL-3.0-only
+	makedepends = patchelf
 	depends = glibc>=2.36
 	depends = gcc-libs
 	depends = gtk3

@@ -47,7 +47,7 @@ class PackagingTests(unittest.TestCase):
             if ' = ' in line:
                 k, v = line.strip().split(' = ', 1)
                 actual.setdefault(k, []).append(v)
-        for field in ('pkgname', 'pkgver', 'pkgrel', 'pkgdesc', 'url', 'license', 'options', 'depends', 'provides', 'conflicts', 'arch', 'source', 'sha256sums'):
+        for field in ('pkgname', 'pkgver', 'pkgrel', 'pkgdesc', 'url', 'license', 'options', 'makedepends', 'depends', 'provides', 'conflicts', 'arch', 'source', 'sha256sums'):
             self.assertEqual(actual[field], values(field), field)
 
     def test_repo_rejects_bad_inputs(self):
@@ -105,7 +105,16 @@ class PackagingTests(unittest.TestCase):
             self.assertEqual(os.readlink(pkg / 'usr/bin/jms'), '/opt/jms/jms')
             for original in (src / 'JMS').rglob('*'):
                 if original.is_file():
-                    self.assertEqual(original.read_bytes(), (pkg / 'opt/jms' / original.relative_to(src / 'JMS')).read_bytes())
+                    installed = pkg / 'opt/jms' / original.relative_to(src / 'JMS')
+                    if original.name.endswith('_plugin.so'):
+                        self.assertEqual(subprocess.check_output(['patchelf', '--print-rpath', str(installed)], text=True).strip(), '$ORIGIN')
+                        # Only loader metadata may change; native machine code is identical.
+                        before, after = Path(tmp) / 'before.text', Path(tmp) / 'after.text'
+                        for binary, section in ((original, before), (installed, after)):
+                            subprocess.run(['objcopy', '--dump-section', '.text=' + str(section), str(binary), str(Path(tmp) / 'copy.elf')], check=True)
+                        self.assertEqual(before.read_bytes(), after.read_bytes())
+                    else:
+                        self.assertEqual(original.read_bytes(), installed.read_bytes())
             self.assertTrue(os.access(pkg / 'opt/jms/jms', os.X_OK))
             self.assertTrue((pkg / 'usr/share/icons/hicolor/512x512/apps/com.jim608.jms.png').is_file())
             self.assertTrue((pkg / 'usr/share/licenses/jms-bin/JMS_NATIVE_NOTICES.txt').is_file())

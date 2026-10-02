@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Prepare isolated build account
         run: |
-          pacman -Syu --noconfirm --needed python desktop-file-utils namcap
+          pacman -Syu --noconfirm --needed python desktop-file-utils namcap patchelf
           useradd -m builder
           chown -R builder:builder "$GITHUB_WORKSPACE"
       - name: Check metadata and contracts
@@ -28,15 +28,24 @@ jobs:
           # Dependencies come only from Arch repositories, not sudo rights for makepkg.
           bash -c 'source packaging/aur/jms-bin/PKGBUILD; pacman -S --needed --noconfirm "${depends[@]}"'
           su builder -c "cd '$GITHUB_WORKSPACE/packaging/aur/jms-bin' && makepkg --cleanbuild --noconfirm"
-          namcap packaging/aur/jms-bin/*.pkg.tar.zst
-      - name: Install and inspect in disposable container
+          namcap packaging/aur/jms-bin/*.pkg.tar.zst > /tmp/namcap.txt
+          cat /tmp/namcap.txt
+          # /opt is intentional for this prebuilt Flutter bundle. Fail every other
+          # namcap error rather than assuming its process exit status is strict.
+          python -c "from pathlib import Path; errors = [line for line in Path('/tmp/namcap.txt').read_text().splitlines() if ' E: ' in line and line != \"jms-bin E: ELF files outside of a valid path ('opt/').\"]; assert not errors, '\n'.join(errors)"
+      - name: Check normalized real payload
         run: |
+          JMS_PORTABLE_ARCHIVE="$GITHUB_WORKSPACE/packaging/aur/jms-bin/JMS-Linux-0.11.1-jms.25-x64.tar.gz" python -m unittest discover -s tests -v
+      - name: Install and inspect in disposable container
+        shell: bash
+        run: |
+          set -euo pipefail
           pacman -U --noconfirm packaging/aur/jms-bin/*.pkg.tar.zst
           pacman -Q jms-bin
           test -x /opt/jms/jms
           test "$(readlink /usr/bin/jms)" = /opt/jms/jms
           ldd /opt/jms/jms /opt/jms/lib/*.so | tee /tmp/ldd.txt
-          ! grep -F 'not found' /tmp/ldd.txt
+          if grep -F 'not found' /tmp/ldd.txt; then exit 1; fi
           pacman -R --noconfirm jms-bin
           test ! -e /opt/jms/jms
       - uses: actions/upload-artifact@v4
