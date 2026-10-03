@@ -1,0 +1,176 @@
+{
+  "platform": "linux-x64",
+  "versionName": "0.11.1-jms.30",
+  "versionCode": 32,
+  "sourceCommit": "d20f9393ca9267df56b1b6f525195a1bcc798b8c",
+  "buildId": "JMS-0.11.1-jms.30-linux-d20f9393ca92",
+  "repository": "jim608/JMS-Linux",
+  "sourceRepository": "jim608/JMS-Android",
+  "nativeReview": {
+    "platform": "linux-x64",
+    "missing": [],
+    "materials": [
+      "JMS-Linux-0.11.1-jms.30-native-materials.zip"
+    ],
+    "binaries": {
+      "lib/libapp.so": "108f2052d2fdd40e774f115bc0eaa8569d8adb67adad15f323eb67c7220426a4",
+      "lib/libdesktop_drop_plugin.so": "c7bdf733c89f92cd243b63715f5e83feeba131cdd4a3c5b93686601d50b902e6",
+      "lib/libdesktop_multi_window_plugin.so": "c91878a6d642da5ddb01c4e4d272e470dd4b77356de3ffb7ee32c91b0030205f",
+      "lib/libdynamic_color_plugin.so": "bd7c2c32375dc1df7972c392b5e79386001ea14247a49cfcc4901c97572612c7",
+      "lib/libflutter_linux_gtk.so": "23e7390f30a9b2bc0bef86c026884c505c5a66876f190631f04fdcaecec3f3c8",
+      "lib/libmedia_kit_libs_linux_plugin.so": "1f6331446afc890816cbd7c81f68e6330eba718085a2be489615e74a80de6db9",
+      "lib/libmedia_kit_video_plugin.so": "c5684d26d85b32ff3b147c4787a0f0b9eb80c7fe841b527fa4e5172ec9558fff",
+      "lib/libscreen_retriever_linux_plugin.so": "74acca4d09a8f54c8dadf86d42ee9f36f06abb463bfbdc1b07515c4291455917",
+      "lib/libsqlite3_flutter_libs_plugin.so": "b8dacbe3b460f6ce5d6ee83bd61fd6b46d73080b9d32b5708cb8067cc14adf18",
+      "lib/liburl_launcher_linux_plugin.so": "d7ccd8c2385b4242a7a285ebc94c73b1d47d3cbddd6421a794ae7510842079bd",
+      "lib/libvolume_controller_plugin.so": "b0a2c129ec242831f4147c23db516a927cee820a89945c4190d31e3f9780de07",
+      "lib/libwindow_manager_plugin.so": "aff60dbe8b33ad4cc59f8783b510e578ade199ffbcd75228562658025d55f58e"
+    },
+    "systemDependencies": [
+      "mpv",
+      "gtk3",
+      "alsa-lib",
+      "sqlite",
+      "libsecret",
+      "gnome-keyring",
+      "polkit",
+      "networkmanager"
+    ],
+    "pluginSources": "Hosted source files verified against previous materials and current cache; Git plugin files exported from exact pubspec.lock resolved revisions",
+    "flutterEngine": "035316565ad77281a75305515e4682e6c4c6f7ca",
+    "sourceCommit": "d20f9393ca9267df56b1b6f525195a1bcc798b8c",
+    "materialReuse": {
+      "baselineSourceCommit": "a19c6d35f325f508b306894ccdc68c2755fa33da",
+      "baselineArchiveSha256": "0518a968921d7d1e317c1b95659a74f6592865208533f4570119e85d37f4e2f2",
+      "unchanged": [
+        "native plugin lock entries",
+        "fixed native toolchain recipe",
+        "Flutter engine",
+        "native component set"
+      ],
+      "changedDartDependencySources": [
+        "background_downloader"
+      ],
+      "changedSystemBuildPackages": [
+        "libexpat1",
+        "libexpat1-dev"
+      ]
+    }
+  },
+  "validation": {
+    "launch": true,
+    "portableLaunch": true,
+    "upgrade": true,
+    "freshInstall": true,
+    "aurLocalMakepkg": true,
+    "yayLocalRecipeInstall": true,
+    "aurMetadataMatches": true,
+    "officialAurRoundtrip": true,
+    "settingsRetained": [
+      "themeMode",
+      "checkForUpdates"
+    ],
+    "environment": "Isolated Arch x86_64, Xvfb, PulseAudio and system/session D-Bus",
+    "physicalDesktop": false,
+    "aurPublic": false,
+    "polkitInteractive": false,
+    "secretService": [
+      "cross-process restore",
+      "daemon restart",
+      "logout clear",
+      "account isolation",
+      "no plaintext fallback"
+    ],
+    "diagnosticsContainer": [
+      "root nginx",
+      "rootless nginx",
+      "production nginx",
+      "synthetic event acceptance",
+      "unknown field refusal",
+      "credentials not persisted"
+    ],
+    "buildWorkflow": "https://github.com/jim608/JMS-Android/actions/runs/37089573678",
+    "diagnosticsWorkflow": "https://github.com/jim608/JMS-Android/actions/runs/37089573678",
+    "installWorkflow": "https://github.com/jim608/JMS-Android/actions/runs/37092620003",
+    "validationToolsCommit": "e4e1c9b8d243df788007a680c9b903c5c91e59b3"
+  },
+  "assets": [
+    {
+      "name": "JMS-Linux-0.11.1-jms.30-x86_64.pkg.tar.xz",
+      "size": 31215176,
+      "sha256": "ca9fef110164a57221ebed200025930f761f6f22427062265f7843973ecfd328"
+    },
+    {
+      "name": "JMS-Linux-0.11.1-jms.30-x64.tar.gz",
+      "size": 42333370,
+      "sha256": "7233b5ca9382b225e53477b8ca42c9d3f5edf5746571c4a7a4ba8c63e1b3e6ef"
+    },
+    {
+      "name": "JMS-Linux-0.11.1-jms.30-jms-bin-aur.tar.gz",
+      "size": 2633,
+      "sha256": "76ee7c4bddce4d0a34abdc904aa9c414d3a766284252ab1e5e6d3dd82d68da52"
+    },
+    {
+      "name": "JMS-0.11.1-jms.30-source.zip",
+      "size": 69087551,
+      "sha256": "a38bf3e5d8f246d9eb8b99e078a28b1daf0eb524036e1ce972ddd1d27b32b9fe"
+    },
+    {
+      "name": "JMS-Linux-0.11.1-jms.30-native-materials.zip",
+      "size": 2283230,
+      "sha256": "13f3cccabeacfb38e54a192ab1414aae42c794029de50e06ce9ea3cf8dafc015"
+    },
+    {
+      "name": "native-review.json",
+      "size": 2388,
+      "sha256": "c6096e4e044b6758b63b8f9716cafe28f8c680fa0ba1714900af34b328da76e5"
+    },
+    {
+      "name": "update-linux.json",
+      "size": 754,
+      "sha256": "52731ced2784bc91b5e96b99abb106522e33ce623f94c9e4bf4697a170bac200"
+    },
+    {
+      "name": "RELEASE_NOTES.md",
+      "size": 3239,
+      "sha256": "88dc92d59131a6d05fab8bef36a8423460c5da54265d8e2bc4f27b1bb255f172"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "size": 776,
+      "sha256": "e24b3c19336526ed7b6aacd8c61cc4b7342392ad69e2bd40390c7feffbb4d9b9"
+    }
+  ],
+  "releaseToolsCommit": "13a7ba494eb6baedeb1b0a4c5d04806e9419c300",
+  "recipePreparation": {
+    "scope": "README-only local Git prerequisites",
+    "appSourceCommit": "d20f9393ca9267df56b1b6f525195a1bcc798b8c",
+    "toolsCommit": "13a7ba494eb6baedeb1b0a4c5d04806e9419c300",
+    "originalCandidateRecipe": {
+      "name": "JMS-Linux-0.11.1-jms.30-jms-bin-aur.tar.gz",
+      "size": 2312,
+      "sha256": "f8a632d0d4bfa609f5b3b9ba744665dab37654f642af9a068caf928cb6bbe6bd"
+    },
+    "publicationRecipe": {
+      "name": "JMS-Linux-0.11.1-jms.30-jms-bin-aur.tar.gz",
+      "size": 2633,
+      "sha256": "76ee7c4bddce4d0a34abdc904aa9c414d3a766284252ab1e5e6d3dd82d68da52"
+    },
+    "unchangedMembers": [
+      "jms-bin/PKGBUILD",
+      "jms-bin/.SRCINFO"
+    ],
+    "unchangedBinaries": [
+      {
+        "name": "JMS-Linux-0.11.1-jms.30-x86_64.pkg.tar.xz",
+        "size": 31215176,
+        "sha256": "ca9fef110164a57221ebed200025930f761f6f22427062265f7843973ecfd328"
+      },
+      {
+        "name": "JMS-Linux-0.11.1-jms.30-x64.tar.gz",
+        "size": 42333370,
+        "sha256": "7233b5ca9382b225e53477b8ca42c9d3f5edf5746571c4a7a4ba8c63e1b3e6ef"
+      }
+    ]
+  }
+}
