@@ -136,16 +136,16 @@
     },
     {
       "name": "RELEASE_NOTES.md",
-      "size": 1551,
-      "sha256": "79daa95f5ddb0acfe60a9e4e583938cbadea3534460623f5fa5058fd0cf42884"
+      "size": 1675,
+      "sha256": "2537880ebe012bfc3036a570f2ee029b012e5427dca97dd9b35095932872aee1"
     },
     {
       "name": "SHA256SUMS.txt",
-      "size": 776,
-      "sha256": "0c266a2c8b1641289d0b44c72a0784170482827c1eda755c737df00ecdb10ee8"
+      "size": 784,
+      "sha256": "b73721e9aee280f7b08d2846dd03489da1a1cd0ba476525c0a3c78c1389097c7"
     }
   ],
-  "releaseToolsCommit": "6cb548f1814e4700676aca63c7789b906c847ad3",
+  "releaseToolsCommit": "468e71aa5682f669a1bf4f9de2018447ac5a6965",
   "recipePreparation": {
     "scope": "README-only local Git prerequisites",
     "appSourceCommit": "6cb548f1814e4700676aca63c7789b906c847ad3",
@@ -176,5 +176,7 @@
         "sha256": "4f883e5ac1c16a0355e25ff8af11965cab441b62abdb07c910edad0f650908d1"
       }
     ]
-  }
+  },
+  "releaseNotesCommit": "468e71aa5682f669a1bf4f9de2018447ac5a6965",
+  "releaseNotesChangelogSha256": "241c0ee6dbb5e9e46bc1021b5247c8c0c4bfaa052490496c88a0ed697f9826c6"
 }
