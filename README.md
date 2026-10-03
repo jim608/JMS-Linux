@@ -6,16 +6,16 @@ JMS（Jim608 Media Server）基於 [DonutWare/Fladder](https://github.com/DonutW
 
 ## 下載與安裝
 
-目前測試版：[JMS 0.11.1-jms.31](https://github.com/jim608/JMS-Linux/releases/tag/v0.11.1-jms.31)，完整 App 版本為 `0.11.1-jms.31+33`。下載前閱讀版本說明，並使用同版的 [SHA256SUMS.txt](https://github.com/jim608/JMS-Linux/releases/download/v0.11.1-jms.31/SHA256SUMS.txt) 核對檔案。
+目前測試版：[JMS 0.11.1-jms.33](https://github.com/jim608/JMS-Linux/releases/tag/v0.11.1-jms.33)，完整 App 版本為 `0.11.1-jms.33+35`。下載前閱讀版本說明，並使用同版的 [SHA256SUMS.txt](https://github.com/jim608/JMS-Linux/releases/download/v0.11.1-jms.33/SHA256SUMS.txt) 核對檔案。
 
-- [官方 pacman 安裝套件](https://github.com/jim608/JMS-Linux/releases/download/v0.11.1-jms.31/JMS-Linux-0.11.1-jms.31-x86_64.pkg.tar.xz)，套件名稱為 `jms`。
-- [可攜式套件](https://github.com/jim608/JMS-Linux/releases/download/v0.11.1-jms.31/JMS-Linux-0.11.1-jms.31-x64.tar.gz)，仍需系統依賴。
-- [本機 yay／makepkg 配方](https://github.com/jim608/JMS-Linux/releases/download/v0.11.1-jms.31/JMS-Linux-0.11.1-jms.31-jms-bin-aur.tar.gz)，內含 `PKGBUILD`、`.SRCINFO` 與繁體中文說明，套件名稱為 `jms-bin`。
+- [官方 pacman 安裝套件](https://github.com/jim608/JMS-Linux/releases/download/v0.11.1-jms.33/JMS-Linux-0.11.1-jms.33-x86_64.pkg.tar.xz)，套件名稱為 `jms`。
+- [可攜式套件](https://github.com/jim608/JMS-Linux/releases/download/v0.11.1-jms.33/JMS-Linux-0.11.1-jms.33-x64.tar.gz)，仍需系統依賴。
+- [本機 yay／makepkg 配方](https://github.com/jim608/JMS-Linux/releases/download/v0.11.1-jms.33/JMS-Linux-0.11.1-jms.33-jms-bin-aur.tar.gz)，內含 `PKGBUILD`、`.SRCINFO` 與繁體中文說明，套件名稱為 `jms-bin`。
 
 在已完成正常系統更新的環境，使用官方安裝套件：
 
 ```bash
-sudo pacman -U ./JMS-Linux-0.11.1-jms.31-x86_64.pkg.tar.xz
+sudo pacman -U ./JMS-Linux-0.11.1-jms.33-x86_64.pkg.tar.xz
 ```
 
 使用本機配方時，解開至全新目錄並閱讀 `jms-bin/PKGBUILD`。yay 13 的本機建置流程需要可核對的 Git 工作目錄；在解開封存後、包含 `jms-bin` 的目錄，以一般使用者建立僅含配方的本機提交。不要重設既有 Git 倉庫，提交身分可換成自己的公開 noreply 身分：
@@ -50,9 +50,11 @@ Linux 更新資訊為 `update-linux.json`，只使用本倉庫的公開 Release�
 
 本版未提供正式發行者簽章，安裝遵循本機 pacman 信任政策，不自動降低檢查。隔離 Arch 驗證涵蓋套件、啟動、升級、本機 yay 配方與設定保留；實體 EndeavourOS／Arch 的 GPU 播放、本人登入與互動式 PolicyKit 授權仍待驗證。
 
+環境光可調整取樣間隔及畫面同步設定。高頻取樣可能影響播放流暢度，請依裝置效能調整。
+
 ## 共用來源與其他平台
 
-完整 Flutter 原始碼只維護於 [JMS-Android 的 jms 分支](https://github.com/jim608/JMS-Android/tree/jms)。本倉庫不另存一份 `lib/`。本版共用來源提交為 [`8f2f9960cc4f8c70eedf8da315a82c2675a5fcf7`](https://github.com/jim608/JMS-Android/commit/8f2f9960cc4f8c70eedf8da315a82c2675a5fcf7)，Build ID 為 `JMS-0.11.1-jms.31-linux-8f2f9960cc4f`。
+完整 Flutter 原始碼只維護於 [JMS-Android 的 jms 分支](https://github.com/jim608/JMS-Android/tree/jms)。本倉庫不另存一份 `lib/`。本版共用來源提交為 [`6cb548f1814e4700676aca63c7789b906c847ad3`](https://github.com/jim608/JMS-Android/commit/6cb548f1814e4700676aca63c7789b906c847ad3)，Build ID 為 `JMS-0.11.1-jms.33-linux-6cb548f1814e`。
 
 各版本另附真正對應 sourceCommit 的完整來源 ZIP、原生依賴材料與授權。GitHub 自動產生的 Source code.zip 僅含此發布倉庫文件，不能代替共用 Flutter 完整來源。
 
