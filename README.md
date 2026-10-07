@@ -6,16 +6,16 @@ JMS（Jim608 Media Server）基於 [DonutWare/Fladder](https://github.com/DonutW
 
 ## 下載與安裝
 
-目前測試版：[JMS 0.11.1-jms.33](https://github.com/jim608/JMS-Linux/releases/tag/v0.11.1-jms.33)，完整 App 版本為 `0.11.1-jms.33+35`。下載前閱讀版本說明，並使用同版的 [SHA256SUMS.txt](https://github.com/jim608/JMS-Linux/releases/download/v0.11.1-jms.33/SHA256SUMS.txt) 核對檔案。
+目前測試版：[JMS 0.11.1-jms.36](https://github.com/jim608/JMS-Linux/releases/tag/v0.11.1-jms.36)，完整 App 版本為 `0.11.1-jms.36+38`。下載前閱讀版本說明，並使用同版的 [SHA256SUMS.txt](https://github.com/jim608/JMS-Linux/releases/download/v0.11.1-jms.36/SHA256SUMS.txt) 核對檔案。
 
-- [官方 pacman 安裝套件](https://github.com/jim608/JMS-Linux/releases/download/v0.11.1-jms.33/JMS-Linux-0.11.1-jms.33-x86_64.pkg.tar.xz)，套件名稱為 `jms`。
-- [可攜式套件](https://github.com/jim608/JMS-Linux/releases/download/v0.11.1-jms.33/JMS-Linux-0.11.1-jms.33-x64.tar.gz)，仍需系統依賴。
-- [本機 yay／makepkg 配方](https://github.com/jim608/JMS-Linux/releases/download/v0.11.1-jms.33/JMS-Linux-0.11.1-jms.33-jms-bin-aur.tar.gz)，內含 `PKGBUILD`、`.SRCINFO` 與繁體中文說明，套件名稱為 `jms-bin`。
+- [官方 pacman 安裝套件](https://github.com/jim608/JMS-Linux/releases/download/v0.11.1-jms.36/JMS-Linux-0.11.1-jms.36-x86_64.pkg.tar.xz)，套件名稱為 `jms`。
+- [可攜式套件](https://github.com/jim608/JMS-Linux/releases/download/v0.11.1-jms.36/JMS-Linux-0.11.1-jms.36-x64.tar.gz)，仍需系統依賴。
+- [本機 yay／makepkg 配方](https://github.com/jim608/JMS-Linux/releases/download/v0.11.1-jms.36/JMS-Linux-0.11.1-jms.36-jms-bin-aur.tar.gz)，內含 `PKGBUILD`、`.SRCINFO` 與繁體中文說明，套件名稱為 `jms-bin`。
 
 在已完成正常系統更新的環境，使用官方安裝套件：
 
 ```bash
-sudo pacman -U ./JMS-Linux-0.11.1-jms.33-x86_64.pkg.tar.xz
+sudo pacman -U ./JMS-Linux-0.11.1-jms.36-x86_64.pkg.tar.xz
 ```
 
 使用本機配方時，解開至全新目錄並閱讀 `jms-bin/PKGBUILD`。yay 13 的本機建置流程需要可核對的 Git 工作目錄；在解開封存後、包含 `jms-bin` 的目錄，以一般使用者建立僅含配方的本機提交。不要重設既有 Git 倉庫，提交身分可換成自己的公開 noreply 身分：
@@ -40,6 +40,8 @@ yay -Bi ./jms-bin
 
 ## 更新與服務
 
+本版移除「本地伺服器網址」及同網路自動切換，連線統一使用主伺服器網址；主網址仍可手動填入內網位址。
+
 Linux 更新資訊為 `update-linux.json`，只使用本倉庫的公開 Release。測試版需開啟「接收測試版」；自動檢查更新不等於自動下載或安裝。官方 `jms` 安裝由 PolicyKit 與 pacman 執行，須有桌面驗證代理；`jms-bin` 安裝者使用本機配方手動更新，App 不會默默切換套件渠道。
 
 本版需要 glibc 2.36 以上、MPV、GTK 3、ALSA、桌面 D-Bus／NetworkManager，以及已解鎖的 Secret Service（gnome-keyring）。Seerr 工作階段使用安全儲存，無可用安全服務時不以明文保存。
@@ -54,7 +56,7 @@ Linux 更新資訊為 `update-linux.json`，只使用本倉庫的公開 Release�
 
 ## 共用來源與其他平台
 
-完整 Flutter 原始碼只維護於 [JMS-Android 的 jms 分支](https://github.com/jim608/JMS-Android/tree/jms)。本倉庫不另存一份 `lib/`。本版共用來源提交為 [`6cb548f1814e4700676aca63c7789b906c847ad3`](https://github.com/jim608/JMS-Android/commit/6cb548f1814e4700676aca63c7789b906c847ad3)，Build ID 為 `JMS-0.11.1-jms.33-linux-6cb548f1814e`。
+完整 Flutter 原始碼只維護於 [JMS-Android 的 jms 分支](https://github.com/jim608/JMS-Android/tree/jms)。本倉庫不另存一份 `lib/`。本版共用來源提交為 [`db6a0e38023da68475e3bc2d79c42e63650563c1`](https://github.com/jim608/JMS-Android/commit/db6a0e38023da68475e3bc2d79c42e63650563c1)，Build ID 為 `JMS-0.11.1-jms.36-linux-db6a0e38023d`。
 
 各版本另附真正對應 sourceCommit 的完整來源 ZIP、原生依賴材料與授權。GitHub 自動產生的 Source code.zip 僅含此發布倉庫文件，不能代替共用 Flutter 完整來源。
 
