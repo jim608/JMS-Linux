@@ -1,0 +1,253 @@
+{
+  "platform": "linux-x64",
+  "versionName": "0.11.1-jms.42",
+  "versionCode": 44,
+  "sourceCommit": "2ae96acbf3dbf36ebac832a58d2b892c69552a2f",
+  "buildId": "JMS-0.11.1-jms.42-linux-2ae96acbf3db",
+  "repository": "jim608/JMS-Linux",
+  "sourceRepository": "jim608/JMS-Android",
+  "nativeReview": {
+    "platform": "linux-x64",
+    "missing": [],
+    "materials": [
+      "JMS-Linux-0.11.1-jms.42-native-materials.zip"
+    ],
+    "binaries": {
+      "lib/libapp.so": "848b825694762bf7cd71559a0ae0fe4dd956276955e3b619ab7cfa05e2e5dc0d",
+      "lib/libdesktop_drop_plugin.so": "c7bdf733c89f92cd243b63715f5e83feeba131cdd4a3c5b93686601d50b902e6",
+      "lib/libdesktop_multi_window_plugin.so": "c91878a6d642da5ddb01c4e4d272e470dd4b77356de3ffb7ee32c91b0030205f",
+      "lib/libdynamic_color_plugin.so": "bd7c2c32375dc1df7972c392b5e79386001ea14247a49cfcc4901c97572612c7",
+      "lib/libflutter_linux_gtk.so": "23e7390f30a9b2bc0bef86c026884c505c5a66876f190631f04fdcaecec3f3c8",
+      "lib/libmedia_kit_libs_linux_plugin.so": "1f6331446afc890816cbd7c81f68e6330eba718085a2be489615e74a80de6db9",
+      "lib/libmedia_kit_video_plugin.so": "c5684d26d85b32ff3b147c4787a0f0b9eb80c7fe841b527fa4e5172ec9558fff",
+      "lib/libscreen_retriever_linux_plugin.so": "74acca4d09a8f54c8dadf86d42ee9f36f06abb463bfbdc1b07515c4291455917",
+      "lib/libsqlite3_flutter_libs_plugin.so": "b8dacbe3b460f6ce5d6ee83bd61fd6b46d73080b9d32b5708cb8067cc14adf18",
+      "lib/liburl_launcher_linux_plugin.so": "d7ccd8c2385b4242a7a285ebc94c73b1d47d3cbddd6421a794ae7510842079bd",
+      "lib/libvolume_controller_plugin.so": "b0a2c129ec242831f4147c23db516a927cee820a89945c4190d31e3f9780de07",
+      "lib/libwindow_manager_plugin.so": "aff60dbe8b33ad4cc59f8783b510e578ade199ffbcd75228562658025d55f58e"
+    },
+    "systemDependencies": [
+      "mpv",
+      "gtk3",
+      "alsa-lib",
+      "sqlite",
+      "libsecret",
+      "gnome-keyring",
+      "polkit",
+      "networkmanager"
+    ],
+    "pluginSources": "Hosted source files verified against previous materials and current cache; Git plugin files exported from exact pubspec.lock resolved revisions",
+    "flutterEngine": "035316565ad77281a75305515e4682e6c4c6f7ca",
+    "sourceCommit": "2ae96acbf3dbf36ebac832a58d2b892c69552a2f",
+    "materialReuse": {
+      "baselineSourceCommit": "db6a0e38023da68475e3bc2d79c42e63650563c1",
+      "baselineArchiveSha256": "b9a77e5266c480fd948db7c4b23e5a45667c4849e85331a39d9586264a0e4230",
+      "unchanged": [
+        "native plugin lock entries",
+        "fixed native toolchain recipe",
+        "Flutter engine",
+        "native component set"
+      ],
+      "changedDartDependencySources": [],
+      "dependencyClassificationChanges": [
+        "web"
+      ],
+      "changedSystemBuildPackages": [
+        "libpython3.11-minimal",
+        "libpython3.11-stdlib",
+        "linux-libc-dev",
+        "python3.11",
+        "python3.11-minimal"
+      ],
+      "publishedUnchangedNativeBinding": {
+        "sourceCommit": "2ae96acbf3dbf36ebac832a58d2b892c69552a2f",
+        "baselineSourceCommit": "db6a0e38023da68475e3bc2d79c42e63650563c1",
+        "baselinePublishedPortable": {
+          "name": "JMS-Linux-0.11.1-jms.36-x64.tar.gz",
+          "sha256": "7965fbc9734df980e4c42a1e09e826800e9c6bfceede3fc9baf6fc87211db000",
+          "publishedDigestMatches": true
+        },
+        "unchangedNativeBuildSourceInputs": [
+          "linux/",
+          "Dockerfile.linux",
+          "scripts/package_jms_linux.py"
+        ],
+        "elfMagicInventoryCount": 13,
+        "unchangedNonDartElfCount": 12,
+        "unchangedNonDartElfs": {
+          "jms": "b3a91941d2261b423b490946ce65077881415fe58a8331205fdeb8aa11cc8419",
+          "lib/libdesktop_drop_plugin.so": "c7bdf733c89f92cd243b63715f5e83feeba131cdd4a3c5b93686601d50b902e6",
+          "lib/libdesktop_multi_window_plugin.so": "c91878a6d642da5ddb01c4e4d272e470dd4b77356de3ffb7ee32c91b0030205f",
+          "lib/libdynamic_color_plugin.so": "bd7c2c32375dc1df7972c392b5e79386001ea14247a49cfcc4901c97572612c7",
+          "lib/libflutter_linux_gtk.so": "23e7390f30a9b2bc0bef86c026884c505c5a66876f190631f04fdcaecec3f3c8",
+          "lib/libmedia_kit_libs_linux_plugin.so": "1f6331446afc890816cbd7c81f68e6330eba718085a2be489615e74a80de6db9",
+          "lib/libmedia_kit_video_plugin.so": "c5684d26d85b32ff3b147c4787a0f0b9eb80c7fe841b527fa4e5172ec9558fff",
+          "lib/libscreen_retriever_linux_plugin.so": "74acca4d09a8f54c8dadf86d42ee9f36f06abb463bfbdc1b07515c4291455917",
+          "lib/libsqlite3_flutter_libs_plugin.so": "b8dacbe3b460f6ce5d6ee83bd61fd6b46d73080b9d32b5708cb8067cc14adf18",
+          "lib/liburl_launcher_linux_plugin.so": "d7ccd8c2385b4242a7a285ebc94c73b1d47d3cbddd6421a794ae7510842079bd",
+          "lib/libvolume_controller_plugin.so": "b0a2c129ec242831f4147c23db516a927cee820a89945c4190d31e3f9780de07",
+          "lib/libwindow_manager_plugin.so": "aff60dbe8b33ad4cc59f8783b510e578ade199ffbcd75228562658025d55f58e"
+        },
+        "unchangedThirdPartyBinaryCount": 11,
+        "unchangedThirdPartyBinaries": {
+          "lib/libdesktop_drop_plugin.so": "c7bdf733c89f92cd243b63715f5e83feeba131cdd4a3c5b93686601d50b902e6",
+          "lib/libdesktop_multi_window_plugin.so": "c91878a6d642da5ddb01c4e4d272e470dd4b77356de3ffb7ee32c91b0030205f",
+          "lib/libdynamic_color_plugin.so": "bd7c2c32375dc1df7972c392b5e79386001ea14247a49cfcc4901c97572612c7",
+          "lib/libflutter_linux_gtk.so": "23e7390f30a9b2bc0bef86c026884c505c5a66876f190631f04fdcaecec3f3c8",
+          "lib/libmedia_kit_libs_linux_plugin.so": "1f6331446afc890816cbd7c81f68e6330eba718085a2be489615e74a80de6db9",
+          "lib/libmedia_kit_video_plugin.so": "c5684d26d85b32ff3b147c4787a0f0b9eb80c7fe841b527fa4e5172ec9558fff",
+          "lib/libscreen_retriever_linux_plugin.so": "74acca4d09a8f54c8dadf86d42ee9f36f06abb463bfbdc1b07515c4291455917",
+          "lib/libsqlite3_flutter_libs_plugin.so": "b8dacbe3b460f6ce5d6ee83bd61fd6b46d73080b9d32b5708cb8067cc14adf18",
+          "lib/liburl_launcher_linux_plugin.so": "d7ccd8c2385b4242a7a285ebc94c73b1d47d3cbddd6421a794ae7510842079bd",
+          "lib/libvolume_controller_plugin.so": "b0a2c129ec242831f4147c23db516a927cee820a89945c4190d31e3f9780de07",
+          "lib/libwindow_manager_plugin.so": "aff60dbe8b33ad4cc59f8783b510e578ade199ffbcd75228562658025d55f58e"
+        },
+        "changedDartApplicationBinary": {
+          "before": "787760f3896675d396519bad504660f912351e9982002a8dc0621cfd37aecce1",
+          "after": "848b825694762bf7cd71559a0ae0fe4dd956276955e3b619ab7cfa05e2e5dc0d"
+        },
+        "exactBuildPackageChanges": {
+          "python3.11-minimal": [
+            "3.11.2-6+deb12u8",
+            "3.11.2-6+deb12u9"
+          ],
+          "python3.11": [
+            "3.11.2-6+deb12u8",
+            "3.11.2-6+deb12u9"
+          ],
+          "libpython3.11-minimal": [
+            "3.11.2-6+deb12u8",
+            "3.11.2-6+deb12u9"
+          ],
+          "libpython3.11-stdlib": [
+            "3.11.2-6+deb12u8",
+            "3.11.2-6+deb12u9"
+          ],
+          "linux-libc-dev": [
+            "6.1.187-1",
+            "6.1.190-1"
+          ]
+        },
+        "systemPackageReviewSha256": "8ecc47cc80aa68d74b2b49a5bafa7b7da9c9302935d397c239dc3269d7677c06",
+        "materialUpdateScope": "Only exact build-package ledger and reviewed web direct-dependency classification; no changed third-party native binary.",
+        "systemLibrariesBundled": false
+      }
+    }
+  },
+  "validation": {
+    "launch": true,
+    "portableLaunch": true,
+    "upgrade": true,
+    "freshInstall": true,
+    "aurLocalMakepkg": true,
+    "yayLocalRecipeInstall": true,
+    "aurMetadataMatches": true,
+    "officialAurRoundtrip": true,
+    "settingsRetained": [
+      "themeMode",
+      "checkForUpdates"
+    ],
+    "environment": "Isolated Arch x86_64, Xvfb, PulseAudio and system/session D-Bus",
+    "physicalDesktop": false,
+    "aurPublic": false,
+    "polkitInteractive": false,
+    "secretService": [
+      "cross-process restore",
+      "daemon restart",
+      "logout clear",
+      "account isolation",
+      "no plaintext fallback"
+    ],
+    "diagnosticsContainer": [
+      "root nginx",
+      "rootless nginx",
+      "production nginx",
+      "synthetic event acceptance",
+      "unknown field refusal",
+      "credentials not persisted"
+    ],
+    "buildWorkflow": "https://github.com/jim608/JMS-Android/actions/runs/39402120038",
+    "diagnosticsWorkflow": "https://github.com/jim608/JMS-Android/actions/runs/39402120038",
+    "installWorkflow": "https://github.com/jim608/JMS-Android/actions/runs/39402120038",
+    "validationToolsCommit": "2ae96acbf3dbf36ebac832a58d2b892c69552a2f"
+  },
+  "assets": [
+    {
+      "name": "JMS-Linux-0.11.1-jms.42-x86_64.pkg.tar.xz",
+      "size": 31269028,
+      "sha256": "261b0e3f2c5da2d8c297d971ef10b0185d6ca45ddc03944b51d9f63f67034dcc"
+    },
+    {
+      "name": "JMS-Linux-0.11.1-jms.42-x64.tar.gz",
+      "size": 42408919,
+      "sha256": "268b103e18f3177db3458d28989094551005c4a423eca446ce249b1a83d3a13a"
+    },
+    {
+      "name": "JMS-Linux-0.11.1-jms.42-jms-bin-aur.tar.gz",
+      "size": 2626,
+      "sha256": "35db014b96fed894764e73dfef08f085ef00323dc13bbd40eec5d4f008487e99"
+    },
+    {
+      "name": "JMS-0.11.1-jms.42-source.zip",
+      "size": 69478234,
+      "sha256": "641536a947abf453475f4d0ae7d418821c8d0da789b30dc2ed9a9f3ba39a4845"
+    },
+    {
+      "name": "JMS-Linux-0.11.1-jms.42-native-materials.zip",
+      "size": 2283238,
+      "sha256": "47ba5d8dae53e068dfb765cc77e35d288b6fb3215cd7abb23513b0a1f723f955"
+    },
+    {
+      "name": "native-review.json",
+      "size": 6885,
+      "sha256": "08446a1a84d8928ba16ef449b70ea8adb243b7a6aee19fe64e3cc936189000e6"
+    },
+    {
+      "name": "update-linux.json",
+      "size": 754,
+      "sha256": "d6c2d1c5c839a072ca34ae93623605870d148c3c40a0742fdcf3cfeaab8cb8db"
+    },
+    {
+      "name": "RELEASE_NOTES.md",
+      "size": 1789,
+      "sha256": "e7a17e38afb5a6873f7390ccab30ac0d0aa20421d595568ca0e59e9828b7870f"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "size": 776,
+      "sha256": "aba21ca185e0812e907a5553057322b7d3897f3551b6e737c0eb5c391890b7bb"
+    }
+  ],
+  "releaseToolsCommit": "2ae96acbf3dbf36ebac832a58d2b892c69552a2f",
+  "recipePreparation": {
+    "scope": "README-only local Git prerequisites",
+    "appSourceCommit": "2ae96acbf3dbf36ebac832a58d2b892c69552a2f",
+    "toolsCommit": "2ae96acbf3dbf36ebac832a58d2b892c69552a2f",
+    "originalCandidateRecipe": {
+      "name": "JMS-Linux-0.11.1-jms.42-jms-bin-aur.tar.gz",
+      "size": 2654,
+      "sha256": "9b2eccbf86afe08abacf8fba189f316ee4f5b4c55420c8a7b458cf5b534e61d3"
+    },
+    "publicationRecipe": {
+      "name": "JMS-Linux-0.11.1-jms.42-jms-bin-aur.tar.gz",
+      "size": 2626,
+      "sha256": "35db014b96fed894764e73dfef08f085ef00323dc13bbd40eec5d4f008487e99"
+    },
+    "unchangedMembers": [
+      "jms-bin/PKGBUILD",
+      "jms-bin/.SRCINFO"
+    ],
+    "unchangedBinaries": [
+      {
+        "name": "JMS-Linux-0.11.1-jms.42-x86_64.pkg.tar.xz",
+        "size": 31269028,
+        "sha256": "261b0e3f2c5da2d8c297d971ef10b0185d6ca45ddc03944b51d9f63f67034dcc"
+      },
+      {
+        "name": "JMS-Linux-0.11.1-jms.42-x64.tar.gz",
+        "size": 42408919,
+        "sha256": "268b103e18f3177db3458d28989094551005c4a423eca446ce249b1a83d3a13a"
+      }
+    ]
+  }
+}
