@@ -4,6 +4,32 @@ JMS（Jim608 Media Server）基於 [DonutWare/Fladder](https://github.com/DonutW
 
 本倉庫專門提供 **EndeavourOS／Arch Linux x86_64** 發布與更新資訊，不宣稱支援所有 Linux 發行版。
 
+## 畫面與功能
+
+![JMS 功能總覽示意圖](https://raw.githubusercontent.com/jim608/JMS-Android/b7ed27260fa84e4ba0fc4e733ad7c89aafc0a6f3/docs/images/jms-overview.svg)
+
+JMS 讓你在桌面瀏覽 Jellyfin 媒體庫、播放影片與選擇字幕，並透過原生介面使用自己的 Seerr 點片服務。
+
+<table>
+  <tr>
+    <th width="65%">桌面深色字型預覽</th>
+    <th width="35%">手機淺色字型預覽</th>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://raw.githubusercontent.com/jim608/JMS-Android/b7ed27260fa84e4ba0fc4e733ad7c89aafc0a6f3/docs/images/desktop-dark.png" alt="JMS 共用介面的合成字型預覽：桌面深色，非完整 App 截圖" width="640"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/jim608/JMS-Android/b7ed27260fa84e4ba0fc4e733ad7c89aafc0a6f3/docs/images/mobile-light.png" alt="JMS 共用介面的合成字型預覽：手機淺色，非完整 App 截圖" width="280"></td>
+  </tr>
+</table>
+
+**圖片說明：以上兩張為合成字型預覽，展示共用介面的文字層級，並非完整 App 截圖。** 手機圖僅用於呈現共用字型效果；本倉庫僅提供 EndeavourOS／Arch Linux x86_64 發行檔。
+
+![JMS 連線與使用流程示意圖](https://raw.githubusercontent.com/jim608/JMS-Android/b7ed27260fa84e4ba0fc4e733ad7c89aafc0a6f3/docs/images/jms-how-it-works.svg)
+
+- **瀏覽媒體**：連線自己的 Jellyfin 伺服器，瀏覽媒體庫、搜尋作品並切換帳號。
+- **播放與字幕**：選擇音軌與字幕；使用 MPV 播放時可用秒數輸入或滑軌微調字幕時間。雙軌及字幕格式能力依播放器與平台而定。
+- **Seerr 點片**：使用自己設定的 Jellyseerr／Seerr 服務搜尋作品、查看申請紀錄及回報問題；登入與可用操作依服務權限決定。
+- **環境光與睡眠**：提供可調強度、擴散範圍的播放環境光與睡眠計時，依觀看習慣安排播放。
+
 ## 下載與安裝
 
 目前測試版：[JMS 0.11.1-jms.44](https://github.com/jim608/JMS-Linux/releases/tag/v0.11.1-jms.44)，完整 App 版本為 `0.11.1-jms.44+46`。下載前閱讀版本說明，並使用同版的 [SHA256SUMS.txt](https://github.com/jim608/JMS-Linux/releases/download/v0.11.1-jms.44/SHA256SUMS.txt) 核對檔案。
