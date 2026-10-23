@@ -6,16 +6,16 @@ JMS（Jim608 Media Server）基於 [DonutWare/Fladder](https://github.com/DonutW
 
 ## 下載與安裝
 
-目前測試版：[JMS 0.11.1-jms.43](https://github.com/jim608/JMS-Linux/releases/tag/v0.11.1-jms.43)，完整 App 版本為 `0.11.1-jms.43+45`。下載前閱讀版本說明，並使用同版的 [SHA256SUMS.txt](https://github.com/jim608/JMS-Linux/releases/download/v0.11.1-jms.43/SHA256SUMS.txt) 核對檔案。
+目前測試版：[JMS 0.11.1-jms.44](https://github.com/jim608/JMS-Linux/releases/tag/v0.11.1-jms.44)，完整 App 版本為 `0.11.1-jms.44+46`。下載前閱讀版本說明，並使用同版的 [SHA256SUMS.txt](https://github.com/jim608/JMS-Linux/releases/download/v0.11.1-jms.44/SHA256SUMS.txt) 核對檔案。
 
-- [官方 pacman 安裝套件](https://github.com/jim608/JMS-Linux/releases/download/v0.11.1-jms.43/JMS-Linux-0.11.1-jms.43-x86_64.pkg.tar.xz)，套件名稱為 `jms`。
-- [可攜式套件](https://github.com/jim608/JMS-Linux/releases/download/v0.11.1-jms.43/JMS-Linux-0.11.1-jms.43-x64.tar.gz)，仍需系統依賴。
-- [本機 yay／makepkg 配方](https://github.com/jim608/JMS-Linux/releases/download/v0.11.1-jms.43/JMS-Linux-0.11.1-jms.43-jms-bin-aur.tar.gz)，內含 `PKGBUILD`、`.SRCINFO` 與繁體中文說明，套件名稱為 `jms-bin`。
+- [官方 pacman 安裝套件](https://github.com/jim608/JMS-Linux/releases/download/v0.11.1-jms.44/JMS-Linux-0.11.1-jms.44-x86_64.pkg.tar.xz)，套件名稱為 `jms`。
+- [可攜式套件](https://github.com/jim608/JMS-Linux/releases/download/v0.11.1-jms.44/JMS-Linux-0.11.1-jms.44-x64.tar.gz)，仍需系統依賴。
+- [本機 yay／makepkg 配方](https://github.com/jim608/JMS-Linux/releases/download/v0.11.1-jms.44/JMS-Linux-0.11.1-jms.44-jms-bin-aur.tar.gz)，內含 `PKGBUILD`、`.SRCINFO` 與繁體中文說明，套件名稱為 `jms-bin`。
 
 在已完成正常系統更新的環境，使用官方安裝套件：
 
 ```bash
-sudo pacman -U ./JMS-Linux-0.11.1-jms.43-x86_64.pkg.tar.xz
+sudo pacman -U ./JMS-Linux-0.11.1-jms.44-x86_64.pkg.tar.xz
 ```
 
 使用本機配方時，解開至全新目錄並閱讀 `jms-bin/PKGBUILD`。yay 13 的本機建置流程需要可核對的 Git 工作目錄；在解開封存後、包含 `jms-bin` 的目錄，以一般使用者建立僅含配方的本機提交。不要重設既有 Git 倉庫，提交身分可換成自己的公開 noreply 身分：
@@ -52,13 +52,15 @@ Linux 更新資訊為 `update-linux.json`，只使用本倉庫的公開 Release�
 
 本版未提供正式發行者簽章，安裝遵循本機 pacman 信任政策，不自動降低檢查。隔離 Arch 驗證涵蓋套件、啟動、升級、本機 yay 配方與設定保留；實體 EndeavourOS／Arch 的 GPU 播放、本人登入與互動式 PolicyKit 授權仍待驗證。
 
+繁體中文介面內建思源黑體（Noto Sans TC）及四種字重，標題、內文與按鈕採用一致的文字層級；英文介面保留 Open Sans。字型隨 App 提供，不需另行下載，並保留系統字體縮放。
+
 MPV 播放中可開啟字幕時間調整面板，直接輸入正負秒數（支援兩位小數）或拖曳 −60 至 +60 秒的滑軌，放開後套用。微調按鈕每次提前或延後 0.01 秒，保留歸零及換片重設；輸入或操作滑軌時不會觸發播放快捷鍵。原生 MPV 可同時顯示兩條文字字幕；只有播放器實際支援時才提供第二軌的獨立時間調整。ASS／SSA 特效與圖片字幕保留原生單字幕模式。
 
 環境光可調整取樣間隔及畫面同步設定。高頻取樣可能影響播放流暢度，請依裝置效能調整。
 
 ## 共用來源與其他平台
 
-完整 Flutter 原始碼只維護於 [JMS-Android 的 jms 分支](https://github.com/jim608/JMS-Android/tree/jms)。本倉庫不另存一份 `lib/`。本版共用來源提交為 [`d239be2fb0a999b898d53f310dfe600d25dd44f8`](https://github.com/jim608/JMS-Android/commit/d239be2fb0a999b898d53f310dfe600d25dd44f8)，Build ID 為 `JMS-0.11.1-jms.43-linux-d239be2fb0a9`。
+完整 Flutter 原始碼只維護於 [JMS-Android 的 jms 分支](https://github.com/jim608/JMS-Android/tree/jms)。本倉庫不另存一份 `lib/`。本版共用來源提交為 [`6b2f867e1395cd330ca64ad668767dde20b9ba11`](https://github.com/jim608/JMS-Android/commit/6b2f867e1395cd330ca64ad668767dde20b9ba11)，Build ID 為 `JMS-0.11.1-jms.44-linux-6b2f867e1395`。
 
 各版本另附真正對應 sourceCommit 的完整來源 ZIP、原生依賴材料與授權。GitHub 自動產生的 Source code.zip 僅含此發布倉庫文件，不能代替共用 Flutter 完整來源。
 
