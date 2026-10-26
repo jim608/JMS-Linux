@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "origin": "https://jim608.github.io/JMS-Linux/flatpak/repo/",
+  "ref": "app/com.jim608.jms/x86_64/stable",
+  "runtime": "org.gnome.Platform/x86_64/50",
+  "sourceCommit": "5ce90eeadc7d466b58d066be194ef6124d87c9a5",
+  "baselineCommit": "a5fc24872bedd67933ef3b882d7fcc539c376738b35ade02a67db2f27f118e8a",
+  "targetCommit": "4b1e7452a33527d0eacf5bcfb586d42832fa4a4cd9d7caa373315e5633fc52b2",
+  "fixtures": {
+    "baseline-signed.flatpak": {
+      "url": "https://jim608.github.io/JMS-Linux/flatpak/repo/JMS-Linux-0.11.1-jms.50-x86_64-signed.flatpak",
+      "sha256": "c2701964bfcbcdbd12a2dfce22c6993b20e058834475e118f84279d92cd0ef31",
+      "bytes": 48664368
+    },
+    "target-signed.flatpak": {
+      "url": "https://jim608.github.io/JMS-Linux/flatpak/repo/JMS-Linux-0.11.1-jms.51-x86_64-signed.flatpak",
+      "sha256": "6978fb1c2585b995c0095403574379dc9b4d2cccc8491814e1e8f1ac7e46802c",
+      "bytes": 48612392
+    },
+    "target-verification.json": {
+      "url": "https://jim608.github.io/JMS-Linux/flatpak/repo/ci-fixtures/signed-upgrade51-target.json",
+      "sha256": "bcb1a4bf1db81403fb7b387b1dd586ef517cd8a3b0ee49c3daa0f993ffee1c90",
+      "bytes": 19357
+    },
+    "jms-release.gpg": {
+      "url": "https://jim608.github.io/JMS-Linux/flatpak/repo/jms-release.gpg",
+      "sha256": "e708e8459f4be5143ce6cfa20ca69a0b3a10b8ecc248b006354d36e57ecc02d3",
+      "bytes": 1148
+    }
+  }
+}

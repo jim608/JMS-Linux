@@ -1,6 +1,6 @@
 # JMS Linux / Steam Deck signed Flatpak origin
 
-Version: `0.11.1-jms.50+55`; App source: `cf1029f3dd3c5b314f92bccbc9cbefc9004cf40d`.
+Version: `0.11.1-jms.51+56`; App source: `5ce90eeadc7d466b58d066be194ef6124d87c9a5`.
 
 Installable package and corresponding sources: https://jim608.github.io/JMS-Linux/
 
