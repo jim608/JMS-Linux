@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 2,
+  "origin": "https://jim608.github.io/JMS-Linux/flatpak/repo/",
+  "ref": "app/com.jim608.jms/x86_64/stable",
+  "runtime": "org.gnome.Platform/x86_64/50",
+  "targetCommit": "a5fc24872bedd67933ef3b882d7fcc539c376738b35ade02a67db2f27f118e8a",
+  "fixtures": {
+    "target-signed.flatpak": {
+      "url": "https://jim608.github.io/JMS-Linux/flatpak/repo/ci-fixtures/target-signed.flatpak",
+      "sha256": "c2701964bfcbcdbd12a2dfce22c6993b20e058834475e118f84279d92cd0ef31",
+      "bytes": 48664368
+    },
+    "target-verification.json": {
+      "url": "https://jim608.github.io/JMS-Linux/flatpak/repo/ci-fixtures/target-verification.json",
+      "sha256": "182dc2f8353b541dfaa82b0c495afe500679e5e662b7fc0f4d917c268dc020d3",
+      "bytes": 19357
+    },
+    "jms-release.gpg": {
+      "url": "https://jim608.github.io/JMS-Linux/flatpak/repo/ci-fixtures/jms-release.gpg",
+      "sha256": "e708e8459f4be5143ce6cfa20ca69a0b3a10b8ecc248b006354d36e57ecc02d3",
+      "bytes": 1148
+    },
+    "wrong-public-key.gpg": {
+      "url": "https://jim608.github.io/JMS-Linux/flatpak/repo/ci-fixtures/wrong-public-key.gpg",
+      "sha256": "0fcc071d58801d83e29a68f0ac0008c142f675cdfd8d8b7a27362ac1ec578470",
+      "bytes": 10269
+    },
+    "summary": {
+      "url": "https://jim608.github.io/JMS-Linux/flatpak/repo/summary",
+      "sha256": "ed73828cfe6e84b3e1425933d6a8fbf5f8237296821bdd9354f471a925797655",
+      "bytes": 1515
+    },
+    "summary.sig": {
+      "url": "https://jim608.github.io/JMS-Linux/flatpak/repo/summary.sig",
+      "sha256": "1b3f1721f22db57bb62c0387b3e04eeb3a8b38687d4d3be9223d9aed80b9ec4f",
+      "bytes": 592
+    }
+  },
+  "baselineBinding": {
+    "schemaVersion": 1,
+    "scope": "isolated-original-unsigned-runtime-fixture-only",
+    "privateRuntimeFixtureAccepted": true,
+    "originalFullPublicGatePassed": false,
+    "publicRepublishOrSigningPermitted": false,
+    "doesNotProveSignedToSignedOrLegacyUiMigration": true,
+    "acceptanceReceiptSHA256": "84481126fe1c420a5f14eb122c1de5866ce3458b3baefb8b94940b8c2f65474f",
+    "completeDiagnosticSHA256": "62cdd90099fe03c87bb4ec67938e1c3aac6ce5d2253975567d4b8e258f4a2fcb",
+    "runtimeAndPayloadPrivacyRejectedCount": 0,
+    "sourceOnlyRejections": 7,
+    "ci": {
+      "repository": "jim608/JMS-Android",
+      "runId": 40115911726,
+      "artifactId": 12570256262,
+      "artifactName": "jms-flatpak-d2580f81402c25ee7b54b4921c7f9d0ad96ff84d",
+      "sourceCommit": "d2580f81402c25ee7b54b4921c7f9d0ad96ff84d",
+      "zipBytes": 530938062,
+      "zipSHA256": "318fe44f281360d369f07d429482abd4fbdee8c1d70ffc61ff57be0e63e68624"
+    },
+    "runtime": {
+      "name": "JMS-Linux-0.11.1-jms.47-x86_64.flatpak",
+      "size": 48544216,
+      "sha256": "92de119cc7620fe3f1031069316c64d2aed41f3c6201e08afb80125082b7ac7a",
+      "ostreeCommit": "fbfd43711a701fcda048d3d1913573cf33a6431094a78cab89e19071be587660",
+      "runtime": "org.gnome.Platform/x86_64/50",
+      "payloadName": "JMS-Linux-0.11.1-jms.47-flatpak-payload.tar.gz",
+      "payloadBytes": 63829515,
+      "payloadSHA256": "a1425df849c808d5978712580c311dd4bae62c39bdbb3605542b991b9f6a5d07"
+    },
+    "selectedMetadata": {
+      "runner-source.json": "d35d4bb71a7a2ad36f6dc91e54a529888cf9c636ee94ebb447121b5cd31a5d4d",
+      "flatpak-verification.json": "26edfe13767fa78b3625838fbef4d5cca57e70bda9b322d8cbbb6ca4bb9f1769",
+      "flatpak-build-manifest.json": "1feb3b0d3d072825fc3a589baac8e534ebd992b026a895fff47c7a8de2f85f31"
+    }
+  },
+  "targetPublicReleaseGateReceiptSHA256": "3ace4487aed70305d8fc6cfcd23d90db84d4857fa0d155383673b45bd5c5aba0"
+}

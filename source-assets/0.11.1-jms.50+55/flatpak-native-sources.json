@@ -1,0 +1,77 @@
+{
+  "build": {
+    "applicationId": "com.jim608.jms",
+    "platform": "linux-x64",
+    "packageFormat": "flatpak",
+    "versionName": "0.11.1-jms.50",
+    "versionCode": 55,
+    "sourceCommit": "cf1029f3dd3c5b314f92bccbc9cbefc9004cf40d",
+    "buildId": "JMS-0.11.1-jms.50-flatpak-cf1029f3dd3c"
+  },
+  "sources": [
+    {
+      "module": "ffnvcodec",
+      "url": "https://github.com/FFmpeg/nv-codec-headers.git",
+      "commit": "1889e62e2d35ff7aa9baca2bceb14f053785e6f1",
+      "sha256": "936c83b0a686c982137866a21f0473e7ceb988b3ccb6247ea6c4424d3198fd11",
+      "member": "components/ffnvcodec-1889e62e2d35ff7aa9baca2bceb14f053785e6f1.tar.gz"
+    },
+    {
+      "module": "ffmpeg",
+      "url": "https://ffmpeg.org/releases/ffmpeg-7.1.5.tar.xz",
+      "sha256": "de668509caf9e35e3cd162473441fdb29538c6d96ed080292b3cf9e6fc5d558f",
+      "member": "components/ffmpeg/ffmpeg-7.1.5.tar.xz"
+    },
+    {
+      "module": "libass",
+      "url": "https://github.com/libass/libass.git",
+      "commit": "4a05d8127f525943ebf45fdc6497c9e665947f0d",
+      "sha256": "827eb02492edc9abc2653341fe585c364cb239366daff1a93431a7491dd528ed",
+      "member": "components/libass-4a05d8127f525943ebf45fdc6497c9e665947f0d.tar.gz"
+    },
+    {
+      "module": "uchardet",
+      "url": "https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.8.tar.xz",
+      "sha256": "e97a60cfc00a1c147a674b097bb1422abd9fa78a2d9ce3f3fdcc2e78a34ac5f0",
+      "member": "components/uchardet/uchardet-0.0.8.tar.xz"
+    },
+    {
+      "module": "libplacebo",
+      "url": "https://code.videolan.org/videolan/libplacebo.git",
+      "commit": "1fd3c7bde7b943fe8985c893310b5269a09b46c5",
+      "sha256": "bc5e3d9c8a9b144c4027db34f8ba22fd7f717fae9402993747d51ccc966a58d7",
+      "member": "components/libplacebo-1fd3c7bde7b943fe8985c893310b5269a09b46c5.tar.gz"
+    },
+    {
+      "module": "mpv",
+      "url": "https://github.com/mpv-player/mpv.git",
+      "commit": "a0fba7be57f3822d967b04f0f6b6d6341e7516e7",
+      "sha256": "70322c4ebe25d3b5990c494aef04b7f855d5d22b88ae2232b5fd2b7aac36a15d",
+      "member": "components/mpv-a0fba7be57f3822d967b04f0f6b6d6341e7516e7.tar.gz"
+    },
+    {
+      "module": "unchanged-native-plugins",
+      "url": "https://github.com/jim608/JMS-SteamDeck/releases/download/v0.11.1-jms.46-deck-test.20261024/JMS-Third-Party-Sources-20261024.tar.gz",
+      "sha256": "4674801f277f2b32b31f00248c1646da6106456aa5dc9aa512a1ea5b03877519",
+      "sourceCommit": "8ee653a242171c02d639a770a4965cf2bdc33e8d",
+      "unchangedInputs": [
+        "Dockerfile.linux",
+        "linux/CMakeLists.txt"
+      ],
+      "lockMetadataEquivalence": {
+        "baselineLockSHA256": "fe711da11c425511a3f9532f1844eca7f61cde55236ec417daf503e5d46fe279",
+        "currentLockSHA256": "8b9731738677e4d0cd18e7592210f7b0eaf37a711052d5d78b66b5d43856ad19",
+        "onlyChangedField": "packages.dbus.dependency",
+        "before": "transitive",
+        "after": "direct main",
+        "resolvedPackageVersionsHashesSourcesAndSdksIdentical": true,
+        "currentExactLockLocation": "full-corresponding-application-source-zip"
+      }
+    }
+  ],
+  "runtime": {
+    "id": "org.gnome.Platform",
+    "branch": "50",
+    "sourceProject": "https://gitlab.gnome.org/GNOME/gnome-build-meta"
+  }
+}

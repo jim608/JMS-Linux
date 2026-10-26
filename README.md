@@ -1,3 +1,17 @@
+# JMS Linux / Steam Deck signed Flatpak origin
+
+Version: `0.11.1-jms.50+55`; App source: `cf1029f3dd3c5b314f92bccbc9cbefc9004cf40d`.
+
+Installable package and corresponding sources: https://jim608.github.io/JMS-Linux/
+
+Linux and Steam Deck share `com.jim608.jms/x86_64/stable`. The normal desktop launcher and the `--handheld` launcher are included. GNOME Platform 50 is required.
+
+The package, signed summary and original bundle signature have been verified. Portal update/migration validation is pending; this does not claim physical Steam Deck, SteamOS Gaming Mode, controller, GPU/audio/HDR, authenticated media or cross-device SyncPlay acceptance. Earlier Windows acceptance does not validate these Linux behaviors.
+
+The public key is scoped to this JMS origin. No private key or old private `.47` baseline is distributed. Exact App/native corresponding sources remain freely available beside this version, including reconstruction hashes.
+
+---
+
 # JMS Linux
 
 JMS（Jim608 Media Server）基於 [DonutWare/Fladder](https://github.com/DonutWare/Fladder)，使用 GPLv3 授權並保留原作者與第三方署名。

@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "cf1029f3dd3c5b314f92bccbc9cbefc9004cf40d",
+  "versionName": "0.11.1-jms.50",
+  "versionCode": 55,
+  "anonymousAccessRequired": true,
+  "assets": [
+    {
+      "role": "app-source",
+      "name": "JMS-0.11.1-jms.50-source.zip",
+      "size": 87772360,
+      "sha256": "f9cfdd44ef0f5dfd241caf8c2625ca0ff71976e2e0e94de395f2bb6782d20d5d",
+      "parts": [
+        {
+          "name": "JMS-0.11.1-jms.50-source.zip",
+          "size": 87772360,
+          "sha256": "f9cfdd44ef0f5dfd241caf8c2625ca0ff71976e2e0e94de395f2bb6782d20d5d",
+          "url": "https://raw.githubusercontent.com/jim608/JMS-Linux/jms/source-assets/0.11.1-jms.50%2B55/JMS-0.11.1-jms.50-source.zip"
+        }
+      ]
+    },
+    {
+      "role": "native-source",
+      "name": "JMS-Linux-0.11.1-jms.50-flatpak-native-materials.tar.gz",
+      "size": 331494264,
+      "sha256": "4003a3f2afa688430f511b7600bd0bcde8b913ff9c96f4bcc69c6939a174cb62",
+      "parts": [
+        {
+          "name": "JMS-Linux-0.11.1-jms.50-flatpak-native-materials.tar.gz.part001",
+          "size": 99614720,
+          "sha256": "cb70158fd75bd35f7464bc48674d1234678616544af0634ba4d6dedd3223d086",
+          "url": "https://raw.githubusercontent.com/jim608/JMS-Linux/jms/source-assets/0.11.1-jms.50%2B55/JMS-Linux-0.11.1-jms.50-flatpak-native-materials.tar.gz.part001"
+        },
+        {
+          "name": "JMS-Linux-0.11.1-jms.50-flatpak-native-materials.tar.gz.part002",
+          "size": 99614720,
+          "sha256": "d3d112bbc5d07d4616f9dbde89c68e46d24598715007c14fd5e80c98d9580152",
+          "url": "https://raw.githubusercontent.com/jim608/JMS-Linux/jms/source-assets/0.11.1-jms.50%2B55/JMS-Linux-0.11.1-jms.50-flatpak-native-materials.tar.gz.part002"
+        },
+        {
+          "name": "JMS-Linux-0.11.1-jms.50-flatpak-native-materials.tar.gz.part003",
+          "size": 99614720,
+          "sha256": "b87af5b764b15d8e6b1fe13fc12b7c5e862442e3ba8400a91906402e02a17012",
+          "url": "https://raw.githubusercontent.com/jim608/JMS-Linux/jms/source-assets/0.11.1-jms.50%2B55/JMS-Linux-0.11.1-jms.50-flatpak-native-materials.tar.gz.part003"
+        },
+        {
+          "name": "JMS-Linux-0.11.1-jms.50-flatpak-native-materials.tar.gz.part004",
+          "size": 32650104,
+          "sha256": "2b57c000591c6de1fe15a2f91c78b6222c886807fa4a26fc66e1079f6f7ecb36",
+          "url": "https://raw.githubusercontent.com/jim608/JMS-Linux/jms/source-assets/0.11.1-jms.50%2B55/JMS-Linux-0.11.1-jms.50-flatpak-native-materials.tar.gz.part004"
+        }
+      ]
+    },
+    {
+      "role": "source-license-manifest",
+      "name": "flatpak-native-sources.json",
+      "size": 3253,
+      "sha256": "577d79e6541d2705e1ea8479da375af22c1e4c1890fa3d2c6f463468fd89c9c7",
+      "parts": [
+        {
+          "name": "flatpak-native-sources.json",
+          "size": 3253,
+          "sha256": "577d79e6541d2705e1ea8479da375af22c1e4c1890fa3d2c6f463468fd89c9c7",
+          "url": "https://raw.githubusercontent.com/jim608/JMS-Linux/jms/source-assets/0.11.1-jms.50%2B55/flatpak-native-sources.json"
+        }
+      ]
+    }
+  ],
+  "reconstructionHelperSHA256": "5248df1214656df2025b5270f8e1625c34e42d4556671db2ac09eeb9f8288f37"
+}

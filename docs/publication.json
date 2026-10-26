@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "cf1029f3dd3c5b314f92bccbc9cbefc9004cf40d",
+  "versionName": "0.11.1-jms.50",
+  "versionCode": 55,
+  "appRef": "app/com.jim608.jms/x86_64/stable",
+  "originUrl": "https://jim608.github.io/JMS-Linux/flatpak/repo/",
+  "targetOstreeCommit": "a5fc24872bedd67933ef3b882d7fcc539c376738b35ade02a67db2f27f118e8a",
+  "signedBundle": {
+    "name": "JMS-Linux-0.11.1-jms.50-x86_64-signed.flatpak",
+    "size": 48664368,
+    "sha256": "c2701964bfcbcdbd12a2dfce22c6993b20e058834475e118f84279d92cd0ef31"
+  },
+  "publicKey": {
+    "fingerprint": "D6E660D8B8FE38C675446512D18E33589A802783",
+    "sha256": "e708e8459f4be5143ce6cfa20ca69a0b3a10b8ecc248b006354d36e57ecc02d3"
+  },
+  "physicalDeviceValidated": false,
+  "portalUpdateValidated": false,
+  "legacyUiMigrationValidated": false
+}
