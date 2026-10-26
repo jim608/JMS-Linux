@@ -1,0 +1,3 @@
+# Public artifacts are hash-pinned; preserve their exact serialized bytes.
+/docs/** -text
+/source-assets/** -text
