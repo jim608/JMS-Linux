@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "repository": "jim608/JMS-Linux",
+  "sourceRepository": "jim608/JMS-Android",
+  "releaseTag": "v0.11.1-jms.53",
+  "releaseChannel": "prerelease",
+  "versionName": "0.11.1-jms.53",
+  "versionCode": 62,
+  "sourceCommit": "f54af0fa8ac35c88d5634739a9a5840afa042e0e",
+  "appRef": "app/com.jim608.jms/x86_64/stable",
+  "targetOstreeCommit": "51b37023b3390e6602733ba64837c9fdf0752eceb058e1ab2d733ccbdc749909",
+  "signedBundleSha256": "82dce818718e15daf7dc1491947ddd2139e46cf96a34e660ab3f4ae91485b00f",
+  "signingPublicKeyFingerprint": "D6E660D8B8FE38C675446512D18E33589A802783",
+  "ciRunId": 40448806780,
+  "releaseBodySha256": "1a42f1cf0b3265ab603c301f988d7a8b7804e9ca11613b6c2b5ef0cc345c23b2",
+  "prerelease": true,
+  "makeLatest": false,
+  "productionPagesUnchanged": true,
+  "assets": [
+    {
+      "name": "JMS-Linux-0.11.1-jms.53-x86_64-signed.flatpak",
+      "size": 48605368,
+      "sha256": "82dce818718e15daf7dc1491947ddd2139e46cf96a34e660ab3f4ae91485b00f"
+    },
+    {
+      "name": "JMS-0.11.1-jms.53-source.zip",
+      "size": 87934215,
+      "sha256": "7bce9c4d851763c47458e49b2456f712e95477aaea5f52119c8a637024299d68"
+    },
+    {
+      "name": "JMS-Linux-0.11.1-jms.53-flatpak-native-materials.tar.gz",
+      "size": 331494265,
+      "sha256": "2b7806ee4620f0ef7e3ed079c13327d594bc8284c56164859587d38c2cb0922a"
+    },
+    {
+      "name": "JMS-Linux-0.11.1-jms.53-flatpak-payload.tar.gz",
+      "size": 63911415,
+      "sha256": "f1598bd577ba5c6a103643f6c89fc3614faff4d8efd85c65c901924ea2cbd756"
+    },
+    {
+      "name": "RELEASE_NOTES.md",
+      "size": 1094,
+      "sha256": "2aa92a4834e671e6011592ab6935bcdb249e73f48a643a27b32b24cbafc1a1db"
+    },
+    {
+      "name": "flatpak-build-manifest.json",
+      "size": 3572,
+      "sha256": "3ab3786b9fae77b8a6520d08a0f823d3a4a2d66650b79cc8d553271cf1c471cd"
+    },
+    {
+      "name": "flatpak-native-sources.json",
+      "size": 3253,
+      "sha256": "f7f23bea0e860cc1bfddf22b103fd0e5f29353c9bd938ec6fd5739774a75fdba"
+    },
+    {
+      "name": "flatpak-verification.json",
+      "size": 19357,
+      "sha256": "5e6528fe7073ce42956e7f5015fa6bb3f5ef75a08a2f16313783510376fa4dbe"
+    },
+    {
+      "name": "SHA256SUMS-signed.txt",
+      "size": 805,
+      "sha256": "ece14f1c7b1e36fdfed25aff0a43cd00e467e6be7c55a2480eb172b8f0a31e2e"
+    }
+  ]
+}
