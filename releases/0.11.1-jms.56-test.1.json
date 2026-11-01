@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "repository": "jim608/JMS-Linux",
+  "sourceRepository": "jim608/JMS-Android",
+  "releaseTag": "v0.11.1-jms.56-test.1",
+  "releaseChannel": "prerelease",
+  "versionName": "0.11.1-jms.56",
+  "versionCode": 65,
+  "sourceCommit": "70c78ac00e501cbfd0618e3b48ee5df33a5c8528",
+  "appRef": "app/com.jim608.jms/x86_64/stable",
+  "targetOstreeCommit": "4ac62aa46c9b4b52b4d94686c74751fd18fdf11be3c493330c40c915271f7c18",
+  "signedBundleSha256": "b75961f77bdeeb7b6d10872894c055ec1b58d7c5c7f9c669c92adc7bb1091926",
+  "signingPublicKeyFingerprint": "D6E660D8B8FE38C675446512D18E33589A802783",
+  "ciRunId": 41094167868,
+  "ciArtifactId": 12996457959,
+  "verificationToolsCommit": "70c78ac00e501cbfd0618e3b48ee5df33a5c8528",
+  "releaseBodySha256": "01ed0da7d672ec42e41cb6e21e8a0b8e00c44b26fff890e56b1fa67cb978fe9d",
+  "attachmentManifestSha256": "51f81d16d263a8ef5b6d577cfcdc57f7c89f02305c2b7bfd36d4d5ab1f5c9bc9",
+  "prerelease": true,
+  "makeLatest": false,
+  "draftFirst": true,
+  "productionPagesUnchanged": true,
+  "productionOriginBytesUnchanged": true,
+  "portalValidated": false,
+  "physicalDeckValidated": false,
+  "physicalSyncPlayValidated": false,
+  "assets": [
+    {
+      "name": "JMS-0.11.1-jms.56-source.zip",
+      "size": 88217086,
+      "sha256": "8d23aed11ce49355b245f2e783832264c442656af4f998e6463c7195eed38f16"
+    },
+    {
+      "name": "JMS-Linux-0.11.1-jms.56-flatpak-native-materials.tar.gz",
+      "size": 331494247,
+      "sha256": "f6a507df42e0f93e008c2c2cde0b583b79ffe6725ea55bb9a601076175cc1d6f"
+    },
+    {
+      "name": "JMS-Linux-0.11.1-jms.56-flatpak-payload.tar.gz",
+      "size": 63930826,
+      "sha256": "7b4b7b045cdeb2d7b9721fa0d67549d490acf0702dad4828864777528afa3b2d"
+    },
+    {
+      "name": "JMS-Linux-0.11.1-jms.56-x86_64-signed.flatpak",
+      "size": 48202480,
+      "sha256": "b75961f77bdeeb7b6d10872894c055ec1b58d7c5c7f9c669c92adc7bb1091926"
+    },
+    {
+      "name": "RELEASE_NOTES-TEST.md",
+      "size": 529,
+      "sha256": "01ed0da7d672ec42e41cb6e21e8a0b8e00c44b26fff890e56b1fa67cb978fe9d"
+    },
+    {
+      "name": "SHA256SUMS-signed-TEST.txt",
+      "size": 892,
+      "sha256": "ce695c110aac2653fef467c61f62b23401f69f0740ff354bb2b60948d7ff3e78"
+    },
+    {
+      "name": "flatpak-build-manifest.json",
+      "size": 3572,
+      "sha256": "5841d2690e0d565c10f7a0a2ce62b9fe30178346a1458c854829600faedc9faf"
+    },
+    {
+      "name": "flatpak-native-sources.json",
+      "size": 3253,
+      "sha256": "1fe7371fe936d08d2ffdd35438d1153c3cafafd866799f39eb47e5eb910aa39c"
+    },
+    {
+      "name": "flatpak-verification.json",
+      "size": 19438,
+      "sha256": "1c2d76ea99462097348c158382aaaf3a3f8965755faf78820cb0450ba3a69b63"
+    },
+    {
+      "name": "jms-release.gpg",
+      "size": 1148,
+      "sha256": "e708e8459f4be5143ce6cfa20ca69a0b3a10b8ecc248b006354d36e57ecc02d3"
+    }
+  ]
+}
