@@ -1,0 +1,86 @@
+{
+  "repository": "jim608/JMS-Linux",
+  "releaseTag": "v0.11.1-jms.59-test.1",
+  "versionName": "0.11.1-jms.59",
+  "versionCode": 68,
+  "sourceCommit": "5fd86cc4e5b4132c98e3c6ade8eab1e8dfbb0d5d",
+  "prerelease": true,
+  "makeLatest": false,
+  "formalOriginChanged": false,
+  "assets": [
+    {
+      "name": "flatpak-build-manifest.json",
+      "size": 3572,
+      "sha256": "bd321d10919434a3df67efdb109270fdf0b32a03d648f831ba44eec1f6968942"
+    },
+    {
+      "name": "flatpak-native-sources.json",
+      "size": 3253,
+      "sha256": "5feeb160b4f7d9822966bbd646dd255eb477598514b866f500a24bf502e16bce"
+    },
+    {
+      "name": "flatpak-verification.json",
+      "size": 19438,
+      "sha256": "cdb34d4052ff343c7b46fd78dd089233c3ab9775fb511db65a671b39d427eb95"
+    },
+    {
+      "name": "JMS-0.11.1-jms.59-source.zip",
+      "size": 88374683,
+      "sha256": "e79b460d851fe5c0ce45cd2483f19216303302518410a619b92532581b4cc6d1"
+    },
+    {
+      "name": "JMS-Linux-0.11.1-jms.59-flatpak-native-materials.tar.gz",
+      "size": 331494264,
+      "sha256": "6f1a080f5c4dbf73325af2fffaa34bb6119b26a2b6a6f23ab79e860299a64eea"
+    },
+    {
+      "name": "JMS-Linux-0.11.1-jms.59-flatpak-payload.tar.gz",
+      "size": 64028593,
+      "sha256": "199504eb6e66415c1873db92d70c920a53dca06f2a2772f6d697d67e449b3e61"
+    },
+    {
+      "name": "JMS-Linux-0.11.1-jms.59-x86_64-signed.flatpak",
+      "size": 48684864,
+      "sha256": "8c8b4b003cdd75f18e8bd0981bbcd270d9190836aef1788f2399a59406737fa4"
+    },
+    {
+      "name": "jms-release.gpg",
+      "size": 1148,
+      "sha256": "e708e8459f4be5143ce6cfa20ca69a0b3a10b8ecc248b006354d36e57ecc02d3"
+    },
+    {
+      "name": "libass-official.zip",
+      "size": 440748,
+      "sha256": "8fcae6d8cf274372f25e71e755f3d35763e9255aebb150bbcb0bcee7f267fe29"
+    },
+    {
+      "name": "mpv-official.zip",
+      "size": 4028620,
+      "sha256": "99a52104aa6c4733cb5ccce1c9c7691d2c692d2619af3f096212a274df1b57a7"
+    },
+    {
+      "name": "nuklear-official.zip",
+      "size": 2353880,
+      "sha256": "ce78230fc48e6f68b004630b1564d22a7615fc47c15cd382da64a05eebed45f3"
+    },
+    {
+      "name": "RELEASE_NOTES-TEST.md",
+      "size": 671,
+      "sha256": "74fa3e84586904d4de632c5b2a58192cda07d8feee82891d1fc12e40689e3bc2"
+    },
+    {
+      "name": "SIGNATURE_VERIFICATION59.json",
+      "size": 968,
+      "sha256": "608ca755e8746270a4ee56e1895ada7a1d96fd5cd381142bd91943679bcfcd82"
+    },
+    {
+      "name": "SHA256SUMS-signed-TEST.txt",
+      "size": 1257,
+      "sha256": "70de81e498642404275e401167b0140db865a18d5ce783f9bfb16b16e272fdc6"
+    }
+  ],
+  "sourceRepository": "jim608/JMS-Android",
+  "ciRunId": 43193826490,
+  "signingPublicKeyFingerprint": "D6E660D8B8FE38C675446512D18E33589A802783",
+  "targetOstreeCommit": "e9b006eb931f731c4b09d09d1d726e3acc8cae42a3866a562da487578a19d2a9"
+}
