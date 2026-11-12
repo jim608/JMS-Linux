@@ -4,11 +4,11 @@ JMS 是基於 [DonutWare/Fladder](https://github.com/DonutWare/Fladder) 的 Jell
 
 ## 下載與版本狀態
 
-- **測試版**：[Linux Releases](https://github.com/jim608/JMS-Linux/releases)。2026-11-12 核對的最新公開測試套件為 **[0.11.1-jms.56+65 TEST1](https://github.com/jim608/JMS-Linux/releases/tag/v0.11.1-jms.56-test.1)**，提供 x86_64 簽署 Flatpak。下載後使用同版 `SHA256SUMS-signed-TEST.txt` 核對。
+- **測試版**：[Linux Releases](https://github.com/jim608/JMS-Linux/releases)。2026-11-12 核對的最新公開測試套件為 **[0.11.1-jms.59+68 TEST1](https://github.com/jim608/JMS-Linux/releases/tag/v0.11.1-jms.59-test.1)**，提供 x86_64 簽署 Flatpak。下載後使用同版 `SHA256SUMS-signed-TEST.txt` 核對。
 - **既有簽署 origin 與來源材料**：[JMS Linux 安裝入口](https://jim608.github.io/JMS-Linux/)。TEST Release 與正式 origin／一般自動更新是不同渠道；發布 TEST 不會自動更新既有安裝。
 - **歷史 Arch／pacman 套件**：保留在舊版 Releases；下方 .44 說明不是目前 Flatpak 的安裝指令。套件格式、依賴及簽章不能跨版套用。
 
-.56 TEST 包含 SyncPlay 字幕切換緩衝修正；**Portal、實體 Steam Deck、實體跨裝置 SyncPlay 與舊版升級仍未驗收**。簽署只表示對應套件的簽章狀態，不代表上述功能已通過。CI 成功或原始碼提交不等於已發布新版本。
+.59 TEST1 包含遙控停用／斷線即時撤銷與重連時舊操作尚未結束的隔離修補；14 項公開資產已完成匿名下載 SHA256 校驗。前版 .56 TEST 的 SyncPlay 字幕切換緩衝修正仍保留於歷史版本。**Portal、實體 Steam Deck、實體跨裝置 SyncPlay 與舊版升級仍未驗收**。簽署只表示對應套件的簽章狀態，不代表上述功能已通過。CI 成功或原始碼提交不等於已發布新版本。
 
 ## 原始碼與其他平台
 
