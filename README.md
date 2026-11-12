@@ -1,4 +1,29 @@
-# JMS Linux / Steam Deck signed Flatpak origin
+# JMS Linux / Steam Deck
+
+JMS 是基於 [DonutWare/Fladder](https://github.com/DonutWare/Fladder) 的 Jellyfin 用戶端。本倉庫提供 Linux 套件及發布資訊；不宣稱所有 Linux 發行版或硬體均已驗收。
+
+## 下載與版本狀態
+
+- **測試版**：[Linux Releases](https://github.com/jim608/JMS-Linux/releases)。2026-11-12 核對的最新公開測試套件為 **[0.11.1-jms.56+65 TEST1](https://github.com/jim608/JMS-Linux/releases/tag/v0.11.1-jms.56-test.1)**，提供 x86_64 簽署 Flatpak。下載後使用同版 `SHA256SUMS-signed-TEST.txt` 核對。
+- **既有簽署 origin 與來源材料**：[JMS Linux 安裝入口](https://jim608.github.io/JMS-Linux/)。TEST Release 與正式 origin／一般自動更新是不同渠道；發布 TEST 不會自動更新既有安裝。
+- **歷史 Arch／pacman 套件**：保留在舊版 Releases；下方 .44 說明不是目前 Flatpak 的安裝指令。套件格式、依賴及簽章不能跨版套用。
+
+.56 TEST 包含 SyncPlay 字幕切換緩衝修正；**Portal、實體 Steam Deck、實體跨裝置 SyncPlay 與舊版升級仍未驗收**。簽署只表示對應套件的簽章狀態，不代表上述功能已通過。CI 成功或原始碼提交不等於已發布新版本。
+
+## 原始碼與其他平台
+
+完整 Flutter 原始碼維護於 [JMS-Android 的 jms 分支](https://github.com/jim608/JMS-Android/tree/jms)。請下載同版 Release 附件提供的 App 來源、原生材料與授權；GitHub 自動產生的 Source code.zip 只有本發布倉庫文件，不能代替 App 對應來源。
+
+[Android](https://github.com/jim608/JMS-Android/releases) · [Windows](https://github.com/jim608/JMS-Desktop/releases)
+
+JMS 沿用 GPLv3 授權，保留上游及第三方署名。各平台獨立發布，不互相作為更新備援。
+
+## 歷史資料
+
+<details>
+<summary>.51 簽署 Flatpak origin 與驗證紀錄（歷史快照）</summary>
+
+## 歷史：.51 簽署 Flatpak origin
 
 Version: `0.11.1-jms.51+56`; App source: `5ce90eeadc7d466b58d066be194ef6124d87c9a5`.
 
@@ -10,9 +35,12 @@ The package, signed summary and original bundle signature have been verified. Po
 
 The public key is scoped to this JMS origin. No private key or old private `.47` baseline is distributed. Exact App/native corresponding sources remain freely available beside this version, including reconstruction hashes.
 
----
+</details>
 
-# JMS Linux
+<details>
+<summary>.44 Arch／pacman 安裝、功能及畫面（歷史快照，非目前 Flatpak 指南）</summary>
+
+## 歷史：.44 Arch／pacman 發布說明
 
 JMS（Jim608 Media Server）基於 [DonutWare/Fladder](https://github.com/DonutWare/Fladder)，使用 GPLv3 授權並保留原作者與第三方署名。
 
@@ -109,3 +137,5 @@ MPV 播放中可開啟字幕時間調整面板，直接輸入正負秒數（支�
 各版本另附真正對應 sourceCommit 的完整來源 ZIP、原生依賴材料與授權。GitHub 自動產生的 Source code.zip 僅含此發布倉庫文件，不能代替共用 Flutter 完整來源。
 
 Windows 請使用 [JMS-Desktop](https://github.com/jim608/JMS-Desktop)，Android 請使用 [JMS-Android](https://github.com/jim608/JMS-Android)。不同平台不互相作為更新備援。
+
+</details>
