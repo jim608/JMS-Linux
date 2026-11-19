@@ -1,0 +1,74 @@
+{
+  "repository": "jim608/JMS-Linux",
+  "sourceRepository": "jim608/JMS-Android",
+  "sourceCommit": "9db7178fed878252de123b32c6f1e5d4ee788f27",
+  "ciRunId": 44480521835,
+  "verificationCommit": "999e764d2d5157be1c129704e1d0b28ba97b9f36",
+  "ciArtifactSha256": "d99183747bc90ba68c7ec0a5747594e2a531d0370abea47be68f5482fc87ce6a",
+  "targetOstreeCommit": "bfa11dd722b4ca628a8bf413ecf5b6ba2b987c6cc914ad232ecd8958e6d56c4c",
+  "versionName": "0.12.0-jms.61",
+  "versionCode": 72,
+  "releaseTag": "v0.12.0-jms.61",
+  "prerelease": true,
+  "makeLatest": false,
+  "formalOriginChanged": false,
+  "signedBundle": "JMS-Linux-0.12.0-jms.61-x86_64-signed.flatpak",
+  "signatureReceiptSha256": "21eaf27d9abe0a2eb74d43a8f390ac334846baede51e2c6793a9b6cefca17745",
+  "assets": [
+    {
+      "name": "JMS-0.12.0-jms.61-source.zip",
+      "size": 88989983,
+      "sha256": "ba3366fd2f2d834fda2a5b12063bbb2aa7760d3089c4475746343531a873beaf"
+    },
+    {
+      "name": "JMS-Linux-0.12.0-jms.61-flatpak-native-materials.tar.gz",
+      "size": 41871253,
+      "sha256": "3fdb075429d49d44653a57c28167f11ca0d3f5059ddfd41ba6000dddab1bdaef"
+    },
+    {
+      "name": "JMS-Linux-0.12.0-jms.61-flatpak-payload.tar.gz",
+      "size": 64361726,
+      "sha256": "e9c679d0ac95855d060fe76a97727132833fb148316c169a30d70884f32f6ec2"
+    },
+    {
+      "name": "JMS-Linux-0.12.0-jms.61-x86_64-signed.flatpak",
+      "size": 48769296,
+      "sha256": "9b586816a179794057184a21575d9d93b760c1898da7ec121547e7dda35610f0"
+    },
+    {
+      "name": "RELEASE_NOTES.md",
+      "size": 2753,
+      "sha256": "c7fd093ea0780d4f4ae7820854be5479ebd46eb01e4ed22655f89347d981446e"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "size": 983,
+      "sha256": "e518a22d71b67dee7faec33cfafda5017f9b0b3366e905701313dc0021cf9bc1"
+    },
+    {
+      "name": "SIGNATURE_VERIFICATION61.json",
+      "size": 1378,
+      "sha256": "21eaf27d9abe0a2eb74d43a8f390ac334846baede51e2c6793a9b6cefca17745"
+    },
+    {
+      "name": "flatpak-build-manifest.json",
+      "size": 3674,
+      "sha256": "31fbedf8c98f4928a4c40b41cc6d6b843e45bdf2b28b2266c98e914ab4427649"
+    },
+    {
+      "name": "flatpak-native-sources.json",
+      "size": 9965,
+      "sha256": "5f6ea1f6517b633a39b5e8156112a205c5fc42c0ffea3b985efcd55150fe6b0e"
+    },
+    {
+      "name": "flatpak-verification.json",
+      "size": 19890,
+      "sha256": "16cd653dbf9e75ad0ff62630321657633e485e3bfe3acc10f44be9273b6d2a1c"
+    },
+    {
+      "name": "jms-release.gpg",
+      "size": 1148,
+      "sha256": "e708e8459f4be5143ce6cfa20ca69a0b3a10b8ecc248b006354d36e57ecc02d3"
+    }
+  ]
+}
